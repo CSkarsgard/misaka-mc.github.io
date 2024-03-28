@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="en">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.6 -->
+    <script>
+        window.materialVersion = "1.5.6"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0',
+            '1.5.2',
+            '1.5.5'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+
+
+    <link rel="dns-prefetch" href="https://misaka-mc.disqus.com"/>
+
+
+
+
+
+    <link rel="dns-prefetch" href="../fonts"/>
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            利用閒置 Android 機挖取門羅幣 | 
+        
+        Misaka Maintenance Centre
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/bddvdjacket_shokaiUpRGBnoise_scaleLevel3x3.png">
+    <link rel="icon" href="/img/bddvdjacket_shokaiUpRGBnoise_scaleLevel3x3.png">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="">
+    <meta name="keywords" content=",Android,Smartphone,XMR,mining,crypto">
+    <meta name="theme-color" content="#413583">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.en.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?uVzgA6RLrOm13Ukw8Qgy+A==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #0B0858;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #413583 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #413583 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #413583 !important;
+  }
+
+  .toTop {
+    background: #B3B3B3 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #B3B3B3;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #B3B3B3;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #B3B3B3;
+  }
+
+  .post-toc a:hover {
+    color: #0B0858;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-image: url(/img/07.jpg);
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="../fonts/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?ezyEvm8ST5CGfpA+kFFi1g==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Misaka Maintenance Centre">
+    <meta name="msapplication-starturl" content="https://www.misaka-mc.tokyo/2021/02/13/Mining-XMR-on-Android/">
+    <meta name="msapplication-navbutton-color" content="#413583">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Misaka Maintenance Centre">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/bddvdjacket_shokaiUpRGBnoise_scaleLevel3x3.png">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="https://www.misaka-mc.tokyo/2021/02/13/Mining-XMR-on-Android/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="利用閒置 Android 機挖取門羅幣 | Misaka Maintenance Centre">
+    <meta property="og:image" content="/img/bddvdjacket_shokaiUpRGBnoise_scaleLevel3x3.png">
+    <meta property="og:description" content="">
+    <meta property="og:article:tag" content="Android"> <meta property="og:article:tag" content="Smartphone"> <meta property="og:article:tag" content="XMR"> <meta property="og:article:tag" content="mining"> <meta property="og:article:tag" content="crypto"> 
+
+    
+        <meta property="article:published_time" content="Sat Feb 13 2021 19:34:09 GMT+0900">
+        <meta property="article:modified_time" content="Wed Jul 20 2022 10:59:10 GMT+0900">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="https://www.misaka-mc.tokyo/2021/02/13/Mining-XMR-on-Android/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://www.misaka-mc.tokyo/2021/02/13/Mining-XMR-on-Android/index.html",
+    "headline": "利用閒置 Android 機挖取門羅幣",
+    "datePublished": "Sat Feb 13 2021 19:34:09 GMT+0900",
+    "dateModified": "Wed Jul 20 2022 10:59:10 GMT+0900",
+    "author": {
+        "@type": "Person",
+        "name": "Mika Savijärvi",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.jpg"
+        },
+        "description": "御坂的生命維持與機械保養機構"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Misaka Maintenance Centre",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/bddvdjacket_shokaiUpRGBnoise_scaleLevel3x3.png"
+        }
+    },
+    "keywords": ",Android,Smartphone,XMR,mining,crypto",
+    "description": "",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span id="MD-burger-id" class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#%E4%BB%80%E9%BA%BC%E6%98%AF%E9%96%80%E7%BE%85%E5%B9%A3%EF%BC%9F"><span class="post-toc-text">什麼是門羅幣？</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#%E7%82%BA%E4%BB%80%E9%BA%BC%E6%98%AF%E9%96%80%E7%BE%85%E5%B9%A3%EF%BC%9F"><span class="post-toc-text">為什麼是門羅幣？</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#%E7%82%BA%E4%BB%80%E9%BA%BC%E8%A6%81%E5%9C%A8%E6%89%8B%E6%A9%9F%E4%B8%8A%E6%8C%96%E7%A4%A6%EF%BC%9F"><span class="post-toc-text">為什麼要在手機上挖礦？</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E6%B3%A8%E6%84%8F%E4%BA%8B%E9%A0%85-amp-%E5%85%8D%E8%B2%AC%E8%81%B2%E6%98%8E"><span class="post-toc-text">注意事項&amp;免責聲明</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E5%9C%A8%E9%96%8B%E5%A7%8B%E4%B9%8B%E5%89%8D"><span class="post-toc-text">在開始之前</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E7%B7%A8%E8%AD%AF%E4%B8%80%E5%80%8B%E6%8C%96%E7%A4%A6%E7%A8%8B%E5%BC%8F"><span class="post-toc-text">編譯一個挖礦程式</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#Tips"><span class="post-toc-text">Tips</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E9%96%8B%E5%A7%8B%E6%8C%96%E7%A4%A6%E5%90%A7"><span class="post-toc-text">開始挖礦吧</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#Tips-1"><span class="post-toc-text">Tips</span></a></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 50 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
+        
+    
+            <p class="article-headline-p">
+                利用閒置 Android 機挖取門羅幣
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.jpg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Mika Savijärvi</strong>
+        <span>Feb 13, 2021</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">devices other</i>
+    <span class="visuallyhidden">devices other</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+    <li class="mdl-menu__item">Read this article on other devices</li>
+    
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAAC4ElEQVR42u3aQY7bMBAEQP//08k1QCK7e8gNZKp0MhayxKKBHbBnXr8eeb2wsbGxsbGxsbGxb8l+xdc/HhTf+ef9f3+++sv777ZrxsbGxj6b/eFf/8USL18QbNPsXUtrxsbGxn4A+wpzdU++iLzwJAWvXTM2NjY2dr4FLTW/Z2XN2NjY2Nizz8mi86J4uwKGjY2NfUv2LJqfYZLid6MsDRsbG/v27Dzuuc/n/9rfxsbGxr4xu73yA0YeM82GeOqVY2NjYx/KXonpk2NDDm4bwPXoJzY2NvbR7J9rtbaxUT7Q2ZZSbGxs7LPZbXugfXG+KXlTISmE2NjY2NhtwchHbXJkWzi39bexsbGxv4SdLOh94cmPDXnYtOvCxsbGfhp7JcpJjhxtucpL3bC/jY2Njf0Y9sohJG/W7oqQthUwbGxs7K9lrzQD6qWUzYn8J6kLGDY2NvbXsodN04WYPo+02mbzh3KLjY2NfSg7ienbQ8uupsJsa7CxsbGfzG5bsG2bdh38/iepQyVsbGzsI9j5ItqQqB3Qae/MWxfY2NjYZ7N3xfpt8NQWrfxIs60rgo2Njf2F7LY4JbHOSoEsAqOkCYGNjY19NHsWD+VHjhzThlNLw5fY2NjYB7HzgZi81bpr3Gf2M2BjY2M/jd0WlTyWaqOilpQHTNjY2Ninsnfx2ufMQqVZ5ISNjY39HHY7LpO3DWYHniQwGoZK2NjY2Iey8yKRj+Mkozn5NkUN3aunYWNjYz+A3TZr8wGafDvazd1ct7GxsbG/kN1eedyTl7QZoy5s2NjY2Ieyf2LgctZsmDUPigEgbGxs7KPZKy3Y2dEibwbkz68LGDY2NvZx7HYcZ1d7YFZQ60MLNjY2NvYoKlovV+2dl2/HxsbGxg7KVduUnYVHycEJGxsb+5ns/MDw4QVxS6BtAK+EXNjY2Nhns9vgJuetl733G5pvOjY2Nvap7Odc2NjY2NjY2NjY2Le5fgOcqbnMnruLqwAAAABJRU5ErkJggg==">
+    
+</ul>
+
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-none-link" href="/tags/Android/" rel="tag">Android</a></li><li class="mdl-menu__item"><a class="post_tag-none-link" href="/tags/Smartphone/" rel="tag">Smartphone</a></li><li class="mdl-menu__item"><a class="post_tag-none-link" href="/tags/XMR/" rel="tag">XMR</a></li><li class="mdl-menu__item"><a class="post_tag-none-link" href="/tags/crypto/" rel="tag">crypto</a></li><li class="mdl-menu__item"><a class="post_tag-none-link" href="/tags/mining/" rel="tag">mining</a>
+    </ul>
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=利用閒置 Android 機挖取門羅幣&url=https://www.misaka-mc.tokyo/2021/02/13/Mining-XMR-on-Android/index.html&via=Mika Savijärvi" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://www.misaka-mc.tokyo/2021/02/13/Mining-XMR-on-Android/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+        <a class="post_share-link" href="https://telegram.me/share/url?url=https://www.misaka-mc.tokyo/2021/02/13/Mining-XMR-on-Android/index.html&text=利用閒置 Android 機挖取門羅幣" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Telegram
+            </li>
+        </a>
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h5 id="什麼是門羅幣？"><a href="#什麼是門羅幣？" class="headerlink" title="什麼是門羅幣？"></a>什麼是門羅幣？</h5><blockquote>
+<p>門羅幣（Monero，縮寫：XMR）是一個創建於2014年4月開源加密貨幣，它着重於私隱、分權和可擴展性。與自比特幣衍生的許多加密貨幣不同，Monero 基於 CryptoNote 協議，並在區塊鏈模糊化方面有顯著的算法差異。</p>
+<p>——[WIKIPEDIA][<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/zh-hk/%E9%97%A8%E7%BD%97%E5%B8%81]">https://zh.wikipedia.org/zh-hk/%E9%97%A8%E7%BD%97%E5%B8%81]</a></p>
+</blockquote>
+<h5 id="為什麼是門羅幣？"><a href="#為什麼是門羅幣？" class="headerlink" title="為什麼是門羅幣？"></a>為什麼是門羅幣？</h5><p>門羅幣採用了反 - ASIC 式的採掘方式，無論是 x86, x86-64, ARM 還是 GPU 都可以獲得不錯的採掘效率。因此，考慮到廢舊 Android 手機多為 ARM 架構，門羅幣無疑是最適合採掘的貨幣。</p>
+<h5 id="為什麼要在手機上挖礦？"><a href="#為什麼要在手機上挖礦？" class="headerlink" title="為什麼要在手機上挖礦？"></a>為什麼要在手機上挖礦？</h5><p>這個問題實際上很難回答。不清楚其他人如何，但就我而言我擁有多部閒置的 Android 手機。預期放在抽屜裡吃灰，不如拿出來挖礦，榨乾其最後一點剩餘價值。</p>
+<p>並且，相較於桌面級的通用處理器，手機所採用的處理器實際上擁有更高的效率。用手機評測中常講的詞彙來描述的話就是，它們的能耗比要遠高於桌面級處理器。</p>
+<p>做為參考，Snapdragon 845 滿載僅 5.3 W 的功耗，能夠達到 450 Hash/s，而 I9-9880H 則在 27W 功耗下取得了 1.42 kH/s 的成績。Snapdragon 845 僅使用後者 20% 的電力即可獲得超過後者 30% 的性能。對比桌面級處理器時它們的效能優勢將更加明顯。</p>
+<h3 id="注意事項-amp-免責聲明"><a href="#注意事項-amp-免責聲明" class="headerlink" title="注意事項&amp;免責聲明"></a>注意事項&amp;免責聲明</h3><p>其實是常識性的事情，在手機在滿負荷工作時將維持在較高的溫度，而在高溫時為手機充電則是相當消耗電池壽命的行為。長期保持這種狀態將加速手機電池的老化。</p>
+<p>當然，如果本來就是不會再使用的廢舊手機的話自然不需要考慮這個問題，但如果您準備在您日常使用的手機上採掘的話，請注意這一點。</p>
+<p>此外，本文章僅討論如何採掘加密貨幣，並不涉及任何加密貨幣投資建議。</p>
+<hr>
+<h3 id="在開始之前"><a href="#在開始之前" class="headerlink" title="在開始之前"></a>在開始之前</h3><p>您需要擁有一個 XMR 錢包。獲取的方式有很多，您可以通過互聯網檢索來獲取一個。</p>
+<p>除此以外並沒有什麼其他需要準備的，只要擁有一部 Android 手機和一個充電器即可。如果您有多部 Android 手機準備用於採掘的話也許 USB Charging Hub 會是個不錯的選擇。</p>
+<h3 id="編譯一個挖礦程式"><a href="#編譯一個挖礦程式" class="headerlink" title="編譯一個挖礦程式"></a>編譯一個挖礦程式</h3><p>Android 畢竟是基於 Linux 內核開發的操作系統，因此，任何 Linux 客戶端<strong>理論上</strong>來說都可以在 Android 系統中運行。不過它們多數都沒有 Android 版本，甚至沒有 GUI，因此我們首先需要一個控制台程式。這裏我選擇的是 <a target="_blank" rel="noopener" href="https://play.google.com/store/apps/details?id=com.termux&hl=en&gl=US">Termux</a>。此外，對於採掘程式，在這裡選擇了官方支援 ARM 的 XMRig 。</p>
+<p><img src="https://misaka-mc.tokyo/images/Mining-XMR-on-Android/Termux.png" alt="PlayPage"></p>
+<p>擁有了控制台，我們就可以從頭開始編譯一個 Android 版的挖礦程式了。當然，這裡的程式並不是我們在手機上常見到的那種擁有 GUI 的「Application」，而是完全基於 CLI 的「Program」。</p>
+<p><img src="https://misaka-mc.tokyo/images/Mining-XMR-on-Android/CLI.png"></p>
+<p>Termux 提供了類似 Ubuntu 的開發環境。我們可以首先運行 <code>apt update &amp;&amp; apt upgrade</code> 來更新內置的 dependencies。不過實際上不更新也完全不影響我們挖礦。</p>
+<p>當然，僅靠 Termux 內置的程式顯然不足以完成編譯，我們還需要安裝一些其他的 dependencies。使用 pkg install 來安裝它們。</p>
+<p><code>pkg install automake clang git vim cmake</code></p>
+<p>在開始安裝之前系統會停下來向我們確認是否要繼續，輸入 <code>y</code> 並按 <code>Enter</code> 來確定。</p>
+<p><img src="https://misaka-mc.tokyo/images/Mining-XMR-on-Android/yn.png"></p>
+<p>待安裝完成後，從 GitHub 獲取 XMRig 的源碼。</p>
+<p><code>git clone https://github.com/xmrig/xmrig</code></p>
+<p>獲取完成後我們可以使用 <code>ls</code> 指令來確認目錄。確認 xmrig 目錄存在後，移動到 xmrig 目錄。</p>
+<p><code>cd xmrig</code></p>
+<p><img src="https://misaka-mc.tokyo/images/Mining-XMR-on-Android/cd.png"></p>
+<p>接下來創建 build 目錄並移動到 build 目錄。</p>
+<p><code>mkdir build &amp;&amp; cd build</code></p>
+<p>在 build 目錄下創建 Makefile。由於 Termux 沒有提供 HWLOC 庫的支援，因此需要選擇將 HWLOC 除外：</p>
+<p><code>cmake .. -DWITH_HWLOC=OFF</code></p>
+<p><img src="https://misaka-mc.tokyo/images/Mining-XMR-on-Android/cmake.png"></p>
+<p>創建好 Makefile 後即可在本地編譯 XMRig 程式。</p>
+<p><code>make -j$(nproc)</code></p>
+<p><img src="https://misaka-mc.tokyo/images/Mining-XMR-on-Android/make.png"></p>
+<h5 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h5><p>Termux 是支援 Copy &amp; Paste 的。您不必手動輸入例如網址等繁瑣的指令，僅需 Copy 它，並在 Termux 中任意位置長按並選擇 Paste 即可。</p>
+<h3 id="開始挖礦吧"><a href="#開始挖礦吧" class="headerlink" title="開始挖礦吧"></a>開始挖礦吧</h3><p>至此，已經可以開始在 Android 手機上挖礦了！</p>
+<p><img src="https://misaka-mc.tokyo/images/Mining-XMR-on-Android/xmrig.png"></p>
+<p>如果您仍停留在 build 目錄下的話，可以直接使用 <code>./xmrig -o xmr.pool.minergate.com:45700 -u se17vk4ar7nsrtx -t 8</code> 指令開始挖礦，不要忘記將礦池和 User ID 替換成您使用的礦池和 User ID。這些參數的使用方法與其他平台的 XMRig 是完全相同的，可以在<a target="_blank" rel="noopener" href="https://xmrig.com/docs/miner/command-line-options">這個頁面</a>查看。</p>
+<p>而如果您已經退出了 Termux，可以使用指令 <code>cd xmrig/build</code> 來重新前往 build 目錄，或使用 <code>~/xmrig/build/xmrig</code> 來替代 <code>./xmrig</code>。</p>
+<h5 id="Tips-1"><a href="#Tips-1" class="headerlink" title="Tips"></a>Tips</h5><ul>
+<li>終止挖礦的操作與其他控制台相同，使用 <code>ctrl+c</code> 組合鍵。Termux 提供了虛擬 <code>ctrl</code> 按鈕，按下後再按鍵盤的 <code>c</code> 鍵即可。</li>
+<li>如果只是暫停挖礦，XMRig 提供了快捷鍵 <code>p</code>。按下即可暫停。</li>
+<li><code>h</code> 鍵可以查看當前挖礦速率。</li>
+<li>要完全終止 Termux，需要在通知欄中點擊 Exit。返回桌面或在多任務中劃掉它都不會終止正在運行的終端程式。</li>
+<li>Termux 與 XMRig 並不會檢測您的電源狀態。如果您移除電源的話 XMRig 將會快速耗盡您全部的電池餘量。在移除電源後（或前）請一定記得暫停或停止挖礦活動。</li>
+</ul>
+<hr>
+<p>誠然，儘管使用手機進行挖礦是一件非常「高效率」的事情，但從獲得的 XMR 數量來說並不夠「高效率」。相同電力下它們能夠達到更高的計算速度，這並不意味著它們很快。它們畢竟是手機處理器，計算速度還是非常慢的。因此您需要坐和放寬，甚至是忘掉它的存在——本就是閒置的 Android 手機，相信您也不會常拿起它來。</p>
+<p>您接下來只需要等著接收 XMR 即可，儘管接收的週期可能會非常，非常的長。不過有總歸是比沒有要好的。</p>
+<hr>
+<p>Donate：</p>
+<p>XMR: 4AKQo9ESJpEDNwuvB6znfy36GRVdeTyH5Y3xty4AkaDwjQLvd5Z84sRRh2iNBP55sCLViZCL1TKcKDyhGDvVNLhQ68bfKKg</p>
+<p>ETH: 0xcB7074df5255f19c157e904DF75f3817004D73D1</p>
+
+        
+                <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
+                    <p><strong>
+                         
+                            <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This page is available under the <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a> License.
+                        </strong>
+                        <br>
+                        <strong>Link to this article: </strong><a href="https://www.misaka-mc.tokyo/2021/02/13/Mining-XMR-on-Android/">https://www.misaka-mc.tokyo/2021/02/13/Mining-XMR-on-Android/</a>
+                    </p>
+                </blockquote>
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 DISQUS -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'https://www.misaka-mc.tokyo/2021/02/13/Mining-XMR-on-Android/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'https://www.misaka-mc.tokyo/2021/02/13/Mining-XMR-on-Android/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+<script type="text/ls-javascript" id="disqus-thread-script">
+    queue.offer(function() {
+            (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document;
+                var s = d.createElement('script');
+                s.src = '//misaka-mc.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', + new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        });
+</script>
+
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2021/02/15/Two-love-stories-from-Sugaru-Miaki/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Newer
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2020/12/13/Night-talk/" id="post_nav-older" class="next-content">
+            Older
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/bg.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.jpg" alt="Mika Savijärvi's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        Mika Savijärvi
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="mailto: MikaSavijarvi@proton.me" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                Home
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    Archives
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2022/11/">November 2022<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2022/07/">July 2022<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2021/07/">July 2021<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2021/03/">March 2021<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2021/02/">February 2021<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/12/">December 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/07/">July 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/05/">May 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/10/">October 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/07/">July 2019<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/06/">June 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/05/">May 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/04/">April 2019<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/03/">March 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/01/">January 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/12/">December 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/08/">August 2016<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/07/">July 2016<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                Categories
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                <a class="sidebar_archives-link" href="/categories/Digital-Life/">Digital Life<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/categories/Gadget/">Gadget<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/Idea/">Idea<span class="sidebar_archives-count">10</span></a></li><li><a class="sidebar_archives-link" href="/categories/Tech/">Tech<span class="sidebar_archives-count">5</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/about" title="About">
+                
+                    <i class="material-icons sidebar-material-icons">person</i>
+                
+                About
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/Virtual-Character" title="Virtual Character">
+                
+                    <i class="material-icons sidebar-material-icons">face</i>
+                
+                Virtual Character
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/timeline" title="Timeline">
+                
+                    <i class="material-icons sidebar-material-icons">history</i>
+                
+                Timeline
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/tags" title="Tags">
+                
+                    <i class="material-icons sidebar-material-icons">dashboard</i>
+                
+                Tags
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/links" title="Also see">
+                
+                    <i class="material-icons sidebar-material-icons">language</i>
+                
+                Also see
+            </a>
+        </li>
+        
+            <li class="divider"></li>
+        
+    
+
+    <!-- Article Number  -->
+    
+        <li>
+            <a href="/archives">
+                Number of articles
+                <span class="sidebar-badge">24</span>
+            </a>
+        </li>
+        
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+
+<!-- Theme Material -->
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+        <a href="https://twitter.com/MikaSavijarvi" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-twitter">
+                <span class="visuallyhidden">Twitter</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Facebook -->
+    
+
+    <!-- Google + -->
+    
+        <a href="https://www.youtube.com/channel/UCvfafvKLS6bHxWDJ24H6RcQ" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-gplus">
+                <span class="visuallyhidden">Google Plus</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/mika-savijarvi" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+        <a href="https://t.me/MSavijarvi" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-telegram">
+                <span class="visuallyhidden">Telegram</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- V2EX -->
+    
+
+    <!-- Segmentfault -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;<span year></span>&nbsp;Mika Savijärvi
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?wgjW/HuQG9JDgvPDPoRAng==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?LT4t6iE6m8TO1BLGGiNJqA==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+
+   <!-- 使用 DISQUS js 代码 -->
+<script id="dsq-count-scr" src="//misaka-mc.disqus.com/count.js" async></script>
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('
+<link rel="stylesheet" href="/css/uc.css">
+');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+
+    
+        <script>lsloader.load("hanabi","/js/hanabi-browser-bundle.js?5+2z7ZZmFuZK5IcimlZbxw==", true)</script>
+    
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+        
+        
+        HanabiBrowser.start('pre code',true);
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    var copyrightNow = new Date().getFullYear();
+    var textContent = document.querySelector('span[year]')
+
+    copyrightSince = 2016;
+    if (copyrightSince === copyrightNow||copyrightSince === 0000) {
+        textContent.textContent = copyrightNow
+    } else {
+        textContent.textContent = copyrightSince + ' - ' + copyrightNow
+    }
+
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.6 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>

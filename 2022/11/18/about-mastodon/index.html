@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="en">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.6 -->
+    <script>
+        window.materialVersion = "1.5.6"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0',
+            '1.5.2',
+            '1.5.5'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+
+
+    <link rel="dns-prefetch" href="https://misaka-mc.disqus.com"/>
+
+
+
+
+
+    <link rel="dns-prefetch" href="../fonts"/>
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            Mastodon 的二三事 | 
+        
+        Misaka Maintenance Centre
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/bddvdjacket_shokaiUpRGBnoise_scaleLevel3x3.png">
+    <link rel="icon" href="/img/bddvdjacket_shokaiUpRGBnoise_scaleLevel3x3.png">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="">
+    <meta name="keywords" content=",Twitter,Mastodon,Fediverse,Elon Musk">
+    <meta name="theme-color" content="#413583">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.en.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?uVzgA6RLrOm13Ukw8Qgy+A==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #0B0858;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #413583 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #413583 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #413583 !important;
+  }
+
+  .toTop {
+    background: #B3B3B3 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #B3B3B3;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #B3B3B3;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #B3B3B3;
+  }
+
+  .post-toc a:hover {
+    color: #0B0858;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-image: url(/img/07.jpg);
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="../fonts/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?ezyEvm8ST5CGfpA+kFFi1g==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Misaka Maintenance Centre">
+    <meta name="msapplication-starturl" content="https://www.misaka-mc.tokyo/2022/11/18/about-mastodon/">
+    <meta name="msapplication-navbutton-color" content="#413583">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Misaka Maintenance Centre">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/bddvdjacket_shokaiUpRGBnoise_scaleLevel3x3.png">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="https://www.misaka-mc.tokyo/2022/11/18/about-mastodon/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="Mastodon 的二三事 | Misaka Maintenance Centre">
+    <meta property="og:image" content="/img/bddvdjacket_shokaiUpRGBnoise_scaleLevel3x3.png">
+    <meta property="og:description" content="">
+    <meta property="og:article:tag" content="Twitter"> <meta property="og:article:tag" content="Mastodon"> <meta property="og:article:tag" content="Fediverse"> <meta property="og:article:tag" content="Elon Musk"> 
+
+    
+        <meta property="article:published_time" content="Fri Nov 18 2022 20:33:20 GMT+0900">
+        <meta property="article:modified_time" content="Fri Nov 18 2022 22:27:51 GMT+0900">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="https://www.misaka-mc.tokyo/2022/11/18/about-mastodon/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://www.misaka-mc.tokyo/2022/11/18/about-mastodon/index.html",
+    "headline": "Mastodon 的二三事",
+    "datePublished": "Fri Nov 18 2022 20:33:20 GMT+0900",
+    "dateModified": "Fri Nov 18 2022 22:27:51 GMT+0900",
+    "author": {
+        "@type": "Person",
+        "name": "Mika Savijärvi",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.jpg"
+        },
+        "description": "御坂的生命維持與機械保養機構"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Misaka Maintenance Centre",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/bddvdjacket_shokaiUpRGBnoise_scaleLevel3x3.png"
+        }
+    },
+    "keywords": ",Twitter,Mastodon,Fediverse,Elon Musk",
+    "description": "",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span id="MD-burger-id" class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%AF%AB%E5%9C%A8%E5%89%8D%E9%9D%A2"><span class="post-toc-text">寫在前面</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E4%BB%80%E9%BA%BC%E6%98%AF%E3%80%8C%E5%88%86%E6%95%A3%E5%9E%8B-SNS%E3%80%8D"><span class="post-toc-text">什麼是「分散型 SNS」</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Mastodon-%E5%92%8C-Misskey"><span class="post-toc-text">Mastodon 和 Misskey</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%88%86%E6%95%A3%E5%9E%8B-SNS-%E7%9A%84%E5%95%8F%E9%A1%8C"><span class="post-toc-text">分散型 SNS 的問題</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-Mastodon"><span class="post-toc-text">如何使用 Mastodon</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E9%81%B8%E6%93%87%E4%BC%BA%E6%9C%8D%E5%99%A8"><span class="post-toc-text">選擇伺服器</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E5%85%AC%E9%96%8B%E7%AF%84%E5%9C%8D"><span class="post-toc-text">公開範圍</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E9%96%B2%E8%AE%80%E6%B3%A8%E6%84%8F%E8%A8%AD%E5%AE%9A"><span class="post-toc-text">閲讀注意設定</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#CW-%E8%A8%AD%E5%AE%9A"><span class="post-toc-text">CW 設定</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Timeline"><span class="post-toc-text">Timeline</span></a></li></ol></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 50 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
+        
+    
+            <p class="article-headline-p">
+                Mastodon 的二三事
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.jpg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Mika Savijärvi</strong>
+        <span>Nov 18, 2022</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">devices other</i>
+    <span class="visuallyhidden">devices other</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+    <li class="mdl-menu__item">Read this article on other devices</li>
+    
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAACyUlEQVR42u3aQU4DMRAEwPz/03BFipJ0j5doZZdPKyDslDk0nvHj58j1wMbGxsbGxsbGxr4l+xGvV5/6x0L//P7n57pmbGxs7K3Z+evz4pLSk618/vqsZmxsbOwT2K8CYKX0ZMsScB5m2NjY2Nj5a5IImZWebAc2NjY29jr7Fb6NwKjo+wQYNjY29o3ZV7XpV1pI7SZ+qZeGjY2NfXt2fhi4z/NX59vY2NjYN2avXKNJilgp9OILQNjY2NibsvPi8ms6yRWc2XNbJzY2NvYJ7Dao2mPMDJy/PW9UYWNjY+/NnjX3k0Lf/+T78MvfFQUnNjY29pHs/JVJwMzGw/mlnGLQi42Njb0duz0GvGckgFljq13Y2NjY57CTeJiF3CwC87cvzbexsbGxt2PPWkgrDf1ZgLWhiI2NjX0au23E518fBs9yHGJjY2Pvzc5Dom0ntc2jPJaGrStsbGzsA9h5C6ltQrWhNRskF5cvsbGxsTdlz6jRkHUUZnnLKfpDYmNjY2/NboepyeEkbzC14MuaStjY2NhbsNuC8quW7Xbk252HHzY2NvY57LxV1MZJvkHtxtVbho2NjX0Ae2UM0LaKZk3/dlSMjY2NfRq7+Lf+Kxd02mjExsbGPpOdI2fXdGbbNzt4fBg2YGNjY2/NnjXiZ0OCWemzcQI2Njb2aewWlnxqdmjJ6ymOLtjY2NgHsJNLPLNW/uy40gbkh9qwsbGxj2HPDgazKMq344KDEDY2Nvam7HYlMXZt7K2EHDY2NvYJ7Ee8VsImj73ZOGFpvo2NjY29BTsPrXYA0DatZlszDDBsbGzs7dh5syaPjdm72hVtHDY2Njb2v41y8wNG8t16KoKNjY19JDsJsxyZB15+mMHGxsY+k33VcDcvPTm6JIOKqGZsbGzsrdlt4yZ/zpv4M+SX5tvY2NjYN2afs7CxsbGxsbGxsbFvs34BUW/ilUo6oqEAAAAASUVORK5CYII=">
+    
+</ul>
+
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-none-link" href="/tags/Elon-Musk/" rel="tag">Elon Musk</a></li><li class="mdl-menu__item"><a class="post_tag-none-link" href="/tags/Fediverse/" rel="tag">Fediverse</a></li><li class="mdl-menu__item"><a class="post_tag-none-link" href="/tags/Mastodon/" rel="tag">Mastodon</a></li><li class="mdl-menu__item"><a class="post_tag-none-link" href="/tags/Twitter/" rel="tag">Twitter</a>
+    </ul>
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Mastodon 的二三事&url=https://www.misaka-mc.tokyo/2022/11/18/about-mastodon/index.html&via=Mika Savijärvi" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://www.misaka-mc.tokyo/2022/11/18/about-mastodon/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+        <a class="post_share-link" href="https://telegram.me/share/url?url=https://www.misaka-mc.tokyo/2022/11/18/about-mastodon/index.html&text=Mastodon 的二三事" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Telegram
+            </li>
+        </a>
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h2 id="寫在前面"><a href="#寫在前面" class="headerlink" title="寫在前面"></a>寫在前面</h2><p>2022 年 10 月 27 日，美國 Tesla 和 SpaceX 的 CEO，Elon Musk 完成了對 Twitter 斥資 440 億美元的收購。對於這一收購行為，Elon Musk 自稱是為了推進言論之自由以及為了更好的應對各種 spam bot。</p>
+<p>不過由於 Musk 本身就有很多前科，並且近日 Twitter 大規模裁員中透露出的種種亂象，不少 Twitter 用家開始考慮轉移至其他社交網路。此時首先進入媒體視野的便是 Mastodon。根據 Mastodon 用家數量統計，自 Musk 收購 Twitter 以來，Mastodon 在以平均每小時 500 至 1000 名新用家的速度高速上升中。</p>
+<p>然而，只是為了「逃離」Musk，初到 Mastodon 的人可能會感到無所適從。本稿旨在向初次使用 Mastodon，或是正在考慮轉移至 Mastodon 的用家以簡單的介紹。</p>
+<h2 id="什麼是「分散型-SNS」"><a href="#什麼是「分散型-SNS」" class="headerlink" title="什麼是「分散型 SNS」"></a>什麼是「分散型 SNS」</h2><p>説起 Mastodon，最常一起看到的形容詞便是「分散型 SNS」。如果要對其進行定義的話，分散型 SNS 可以被簡單地理解為：</p>
+<p><strong>無關規模大小，擁有獨自的文化、功能，被不同人所運營，擁有各自的規則的無數個 SNS，互相獨立的同時又互相連接在一起的形態</strong></p>
+<p>與之相對的，Twitter 則是一個巨大的 SNS，由 Twitter 一家公司所運營，受 Twitter 自己制訂的規則所制約。用圖來表示的話如下所示</p>
+<p><img src="https://assets.st-note.com/img/1658331585410-6gG7VH59wQ.png" alt="中央集權型 SNS"></p>
+<p>中央集權型 SNS</p>
+<p><img src="https://assets.st-note.com/img/1658331896620-snaCKOVzzg.png" alt="分散型 SNS"></p>
+<p>分散型 SNS</p>
+<p>這種由數個 SNS 所連接成的集羣又被稱作「Fediverse」。嚴格來講，「Mastodon」這一單詞並不是用來指代全體分散型 SNS（Fediverse）的詞彙，而是用來構建 Fediverse 的軟體之一。有些人也會將 Fediverse 比作在海洋中漂浮的無數島嶼或國家，以 BBS 的觀點來看的話，每一個島嶼其實更接近於「某某版」這一概念。</p>
+<p>很多伺服器會設定自己的內容主題，比如「雜談」、「繪畫」、「Pokemon」、「Kancolle 玩家」等，並在此基礎上指定獨自的規則，甚至添加獨自的功能。並在伺服器間通過被稱作 ActivityPub 的技術來實現跨服跟蹤、回復等互動。因此，如果有能力有條件的話，自己開設伺服器也是可能的。</p>
+<p>每一個「島嶼」均運行在獨自的伺服器中，因此只要尚有一台伺服器仍在工作，Fediverse 便能夠永久地存在下去。因此不會存在所謂「Mastodon 停止服務」的表述。</p>
+<p>也正因此，即使某一台伺服器發生了宕機，用家可以無需等待其恢復，直接轉移至其他伺服器來繼續進行互動，從而誕生了相對來説比較普遍存在的「小號」這一文化。並且同時，Mastodon 亦提供了賬户轉移，以及 follow list 的匯入匯出功能。</p>
+<p>話説回來，一些媒體在報道 Mastodon 的時候，常會採用一些比較誇張的標題。比如「Mastodon 真的永遠不會被封號嗎？」或者「真的隨便説什麼都可以嗎？」等。對於這些問題，簡單來説，「<strong>即使是在 Mastodon（Fediverse）中，涉及違法的事情，或違反該伺服器的利用規則的行為，亦有可能會被伺服器管理員凍結帳號。</strong>」</p>
+<p>分散型 SNS 的其中一個好處是，相對來説對待各種言論的包容度會更高，但並非無法地帶。只要認清這一點，通常不會有問題。</p>
+<h2 id="Mastodon-和-Misskey"><a href="#Mastodon-和-Misskey" class="headerlink" title="Mastodon 和 Misskey"></a>Mastodon 和 Misskey</h2><p>前文已經介紹了 Fediverse 是形態各異，以及擁有獨自功能的伺服器集羣。在這些伺服器中運行的，用於構建 Fediverse 的軟體便是 Mastodon。關於 Mastodon 的功能後文會進行詳細介紹，但再次仍需強調的一點是，伺服器間的交互是通過 ActivityPub 進行的。因此，實際上即使是和 Mastodon 以外的軟體亦可進行交互。</p>
+<p>其中「Mastodon 以外的軟體」之代表例便是 Misskey。Misskey 是純日本製 SNS，由「しゅいろ」開發的分散型 SNS 伺服器軟體。其用户界面（UI）與 Mastodon 完全不同，並且搭載了以 Emoji 對貼文進行「reaction」等功能。Misskey 雖然和 Mastodon 在功能、開發理念等方面相差甚遠，但通過 ActivityPub 可以令 Misskey 用家和 Mastodon 用家相交流。</p>
+<h2 id="分散型-SNS-的問題"><a href="#分散型-SNS-的問題" class="headerlink" title="分散型 SNS 的問題"></a>分散型 SNS 的問題</h2><p>分散型 SNS 當然也存在它獨自的問題。比如：</p>
+<ol>
+<li><p>即使帳號被凍結也可以逃至其他 Server，因此難以完全封禁洗版、擾亂等 Spam User。</p>
+</li>
+<li><p>難以通過 SNS 進行盈利。</p>
+</li>
+<li><p>相比較於 Twitter 等，目前整體用户數量極低。</p>
+</li>
+</ol>
+<p>對於以上的 1.，如果是中央集權型 SNS，比如 Twitter 的話，可以通過 IP ban 等手段進行應對。但分散型 SNS 則完全沒有辦法。此外，對於以上的 2.，pawoo.net 等一部分 server 通過增加廣告等方式為 Server 運營方提供收入。但對於普通用家來説，僅通過 SNS 本身來進行收益化是十分困難的。即使是 Server 運營方，大部分也都是無償提供服務，通過抖內勉強維生。</p>
+<h2 id="如何使用-Mastodon"><a href="#如何使用-Mastodon" class="headerlink" title="如何使用 Mastodon"></a>如何使用 Mastodon</h2><p>介紹過背景及基本構造，仍尚未回答一個關鍵的問題，暨「Mastodon 究竟要怎樣來用」。</p>
+<h3 id="選擇伺服器"><a href="#選擇伺服器" class="headerlink" title="選擇伺服器"></a>選擇伺服器</h3><p>即使嘴上説着要「註冊一個 Mastodon 帳號」，但分散型 SNS 的特典導致這本身是不可能的事情。實際上要做的是「註冊某一個伺服器的帳號」。對於大部分新人來説，最初註冊的帳號大多是打着「中文 Mastodon」、「台灣 Mastodon」等旗號的大規模伺服器。在註冊了這種大型伺服器的帳號後，逐漸對內容感覺到無聊， 感覺沒有人互動，又返回使用 Twitter 的人也不再少數。</p>
+<p>經常被誤解的一點是，並不是所有 Fediverse 用家都在這些大型伺服器中。在這些大型伺服器之外亦有無數大小各異的伺服器存在。大型伺服器並不等同於 Mastodon 整體。</p>
+<p>不過在初來乍到，還沒有搞清楚具體用法的時候，去尋找適合自己的伺服器本身亦很困難。即使善用搜索引擎，很多整合網站給出的伺服器列表都創建於 Mastodon 「黎明期」，很多伺服器如今甚至已不復存在。</p>
+<p>因此我給出的提案是，「<strong>總之先在大型伺服器註冊一個帳號，用一段時間找到感興趣的伺服器後遷移到那裏</strong>」。Mastodon 本身提供了帳號遷移和 Follow list 匯入匯出功能，能夠方便地完成遷移。</p>
+<p>Mastodon 有很多獨特的功能。在這裏限於篇幅限制僅介紹四個最常用也是最重要的功能。暨「公開範圍」、「閲讀注意設定」、「CW 設定」、「Timeline」。</p>
+<h3 id="公開範圍"><a href="#公開範圍" class="headerlink" title="公開範圍"></a>公開範圍</h3><p>首先是「公開範圍」設定。</p>
+<p><img src="https://assets.st-note.com/img/1658329048737-4DKYEukytv.png" alt="公開範圍"></p>
+<p>正如同 Twitter 中的投稿被稱作 Tweet，Mastodon 中的投稿會被稱作 Toot。標準設定下 Toot 的字數限制是 500 字（但一些伺服器可能不使用標準設定）。在輸入好想要發表的內容，在「Toot」之前可以對數個條件進行更改。「公開範圍」設定是上圖中的地球標識。Mastodon 中 Toot 可以被設置為以下幾種狀態。</p>
+<ul>
+<li><p>公開（地球標識）：會同時顯示在 Local Timeline 和 Federated timeline（後文會進行詳細解釋），可以被轉載（Boost），也會被檢索。</p>
+</li>
+<li><p>Unlist（未上鎖的標識）：不會顯示在 Local Timeline 和 Federated Timeline 中，但可以被 Boost。</p>
+</li>
+<li><p>限定公開（上鎖的標識）：只會顯示在自己和追隨者的 Home Timeline 中，無法被 Boost。類似 Twitter 的上鎖帳號的狀態（不過 Mastodon 中是針對某一條 Boot 進行設定，而非帳號整體）。</p>
+</li>
+<li><p>Direct（信件標識）：相當於私訊功能，只有在輸入對方的 ID 後才能選擇這個設定。</p>
+</li>
+</ul>
+<p>此外如 Fedibird 等還實裝了「相互 follow 限定可見」等更多的可見狀態。</p>
+<h3 id="閲讀注意設定"><a href="#閲讀注意設定" class="headerlink" title="閲讀注意設定"></a>閲讀注意設定</h3><p><img src="https://assets.st-note.com/img/1658330108681-NzPxxuJJZN.png" alt="閲讀注意設定"></p>
+<p>當添加媒體後會出現這個選項。勾選後發送的媒體會被標記為「閲讀注意」，在默認設定下出現在 Timeline 時會被進行模糊處理，只有在點擊後才會顯示。基本等同於 NSFW 設定。</p>
+<h3 id="CW-設定"><a href="#CW-設定" class="headerlink" title="CW 設定"></a>CW 設定</h3><p><img src="https://assets.st-note.com/img/1658330298898-Qj1gxN2VoF.png" alt="CW 設定"></p>
+<p>等同於文字版的 NSFW 設定，亦可被用作防劇透設定。和前文提到的媒體的 NSFW 設定相同，默認會以可以自定義的警告語顯示，需點擊後才會顯示正文。在部分伺服器中亦形成了長文請摺疊的習俗，將 CW 設定作為摺疊來使用。</p>
+<h3 id="Timeline"><a href="#Timeline" class="headerlink" title="Timeline"></a>Timeline</h3><p>Mastodon 有三種 Timeline。分別是 Home Timeline、Local Timeline、Federated Timeline。</p>
+<ul>
+<li><p>Home Timeline 和通常的 SNS 類似，僅展示自己和自己追隨的人的投稿。</p>
+</li>
+<li><p>Local Timeline 則是同一伺服器內的人全部投稿，無關是否有追蹤。</p>
+</li>
+<li><p>Federated Timeline 可以被認為是 Fediverse 全體的投稿。通常更新速度較快，並且會出現不少其他語言的投稿，可以在設定中選擇僅展示特定語言。</p>
+</li>
+</ul>
+<p>這裏仍需再次強調，這僅代表 Mastodon 默認提供的功能，實際會隨各伺服器設定有所不同。比如筆者使用的 Fedibird 就不提供 Local Timeline 功能。</p>
+<p>此外，類似 Misskey 中的 「reaction」功能、類似 Discord 中 Server 獨自的貼圖等功能亦可以導入。惟需要在雙方伺服器均導入的情況下才可以進行這些功能的跨服互動。</p>
+<p>在瞭解了這些功能之後，可以用一句不負責任的話來回答最初的問題————如何使用 Mastodon，那是屬於<strong>用家的自由</strong>。既有將 Mastodon 當作 Twitter 的小號來使用的，也有將 Mastodon 當作 IG 的替代品，上傳大量相片的。更有將 Local Timeline 當作聊天室來使用的伺服器。</p>
+<p>如果還在思考「該追蹤哪些用户」的話，不如嘗試打開 Local Timeline。伺服器中的人的投稿會自然地流進來，從中選擇感興趣的用户進行 Follow 即可。整體而言，Fediverse 的住民對新人非常友好。哪怕只是發一句「初來乍到」，亦會有不少用户一邊高呼「新人」一邊主動來進行互動。總之，不需要想太多，自由地發言即可。</p>
+<p><em>註：這篇文章本身旨在讓更多的人瞭解分散型 SNS，並非鼓勵讀者立刻放棄 Twitter 轉移到 Mastodon。</em></p>
+
+        
+                <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
+                    <p><strong>
+                         
+                            <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This page is available under the <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a> License.
+                        </strong>
+                        <br>
+                        <strong>Link to this article: </strong><a href="https://www.misaka-mc.tokyo/2022/11/18/about-mastodon/">https://www.misaka-mc.tokyo/2022/11/18/about-mastodon/</a>
+                    </p>
+                </blockquote>
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 DISQUS -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'https://www.misaka-mc.tokyo/2022/11/18/about-mastodon/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'https://www.misaka-mc.tokyo/2022/11/18/about-mastodon/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+<script type="text/ls-javascript" id="disqus-thread-script">
+    queue.offer(function() {
+            (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document;
+                var s = d.createElement('script');
+                s.src = '//misaka-mc.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', + new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        });
+</script>
+
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2022/07/20/a-better-way-to-use-an-android-phone-2022/" id="post_nav-older" class="next-content">
+            Older
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/bg.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.jpg" alt="Mika Savijärvi's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        Mika Savijärvi
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="mailto: MikaSavijarvi@proton.me" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                Home
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    Archives
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2022/11/">November 2022<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2022/07/">July 2022<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2021/07/">July 2021<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2021/03/">March 2021<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2021/02/">February 2021<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/12/">December 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/07/">July 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/05/">May 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/10/">October 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/07/">July 2019<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/06/">June 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/05/">May 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/04/">April 2019<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/03/">March 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/01/">January 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/12/">December 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/08/">August 2016<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/07/">July 2016<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                Categories
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                <a class="sidebar_archives-link" href="/categories/Digital-Life/">Digital Life<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/categories/Gadget/">Gadget<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/Idea/">Idea<span class="sidebar_archives-count">10</span></a></li><li><a class="sidebar_archives-link" href="/categories/Tech/">Tech<span class="sidebar_archives-count">5</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/about" title="About">
+                
+                    <i class="material-icons sidebar-material-icons">person</i>
+                
+                About
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/Virtual-Character" title="Virtual Character">
+                
+                    <i class="material-icons sidebar-material-icons">face</i>
+                
+                Virtual Character
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/timeline" title="Timeline">
+                
+                    <i class="material-icons sidebar-material-icons">history</i>
+                
+                Timeline
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/tags" title="Tags">
+                
+                    <i class="material-icons sidebar-material-icons">dashboard</i>
+                
+                Tags
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/links" title="Also see">
+                
+                    <i class="material-icons sidebar-material-icons">language</i>
+                
+                Also see
+            </a>
+        </li>
+        
+            <li class="divider"></li>
+        
+    
+
+    <!-- Article Number  -->
+    
+        <li>
+            <a href="/archives">
+                Number of articles
+                <span class="sidebar-badge">24</span>
+            </a>
+        </li>
+        
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+
+<!-- Theme Material -->
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+        <a href="https://twitter.com/MikaSavijarvi" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-twitter">
+                <span class="visuallyhidden">Twitter</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Facebook -->
+    
+
+    <!-- Google + -->
+    
+        <a href="https://www.youtube.com/channel/UCvfafvKLS6bHxWDJ24H6RcQ" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-gplus">
+                <span class="visuallyhidden">Google Plus</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/mika-savijarvi" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+        <a href="https://t.me/MSavijarvi" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-telegram">
+                <span class="visuallyhidden">Telegram</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- V2EX -->
+    
+
+    <!-- Segmentfault -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;<span year></span>&nbsp;Mika Savijärvi
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?wgjW/HuQG9JDgvPDPoRAng==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?LT4t6iE6m8TO1BLGGiNJqA==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+
+   <!-- 使用 DISQUS js 代码 -->
+<script id="dsq-count-scr" src="//misaka-mc.disqus.com/count.js" async></script>
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('
+<link rel="stylesheet" href="/css/uc.css">
+');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+
+    
+        <script>lsloader.load("hanabi","/js/hanabi-browser-bundle.js?5+2z7ZZmFuZK5IcimlZbxw==", true)</script>
+    
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+        
+        
+        HanabiBrowser.start('pre code',true);
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    var copyrightNow = new Date().getFullYear();
+    var textContent = document.querySelector('span[year]')
+
+    copyrightSince = 2016;
+    if (copyrightSince === copyrightNow||copyrightSince === 0000) {
+        textContent.textContent = copyrightNow
+    } else {
+        textContent.textContent = copyrightSince + ' - ' + copyrightNow
+    }
+
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.6 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>

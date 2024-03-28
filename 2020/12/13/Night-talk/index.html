@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="en">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.6 -->
+    <script>
+        window.materialVersion = "1.5.6"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0',
+            '1.5.2',
+            '1.5.5'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+
+
+    <link rel="dns-prefetch" href="https://misaka-mc.disqus.com"/>
+
+
+
+
+
+    <link rel="dns-prefetch" href="../fonts"/>
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            深夜雑談 | 
+        
+        Misaka Maintenance Centre
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/bddvdjacket_shokaiUpRGBnoise_scaleLevel3x3.png">
+    <link rel="icon" href="/img/bddvdjacket_shokaiUpRGBnoise_scaleLevel3x3.png">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="">
+    <meta name="keywords" content="">
+    <meta name="theme-color" content="#413583">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.en.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?uVzgA6RLrOm13Ukw8Qgy+A==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #0B0858;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #413583 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #413583 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #413583 !important;
+  }
+
+  .toTop {
+    background: #B3B3B3 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #B3B3B3;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #B3B3B3;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #B3B3B3;
+  }
+
+  .post-toc a:hover {
+    color: #0B0858;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-image: url(/img/07.jpg);
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="../fonts/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?ezyEvm8ST5CGfpA+kFFi1g==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Misaka Maintenance Centre">
+    <meta name="msapplication-starturl" content="https://www.misaka-mc.tokyo/2020/12/13/Night-talk/">
+    <meta name="msapplication-navbutton-color" content="#413583">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Misaka Maintenance Centre">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/bddvdjacket_shokaiUpRGBnoise_scaleLevel3x3.png">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="https://www.misaka-mc.tokyo/2020/12/13/Night-talk/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="深夜雑談 | Misaka Maintenance Centre">
+    <meta property="og:image" content="/img/bddvdjacket_shokaiUpRGBnoise_scaleLevel3x3.png">
+    <meta property="og:description" content="">
+    
+
+    
+        <meta property="article:published_time" content="Sun Dec 13 2020 02:02:53 GMT+0900">
+        <meta property="article:modified_time" content="Wed Jul 20 2022 10:59:10 GMT+0900">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="https://www.misaka-mc.tokyo/2020/12/13/Night-talk/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://www.misaka-mc.tokyo/2020/12/13/Night-talk/index.html",
+    "headline": "深夜雑談",
+    "datePublished": "Sun Dec 13 2020 02:02:53 GMT+0900",
+    "dateModified": "Wed Jul 20 2022 10:59:10 GMT+0900",
+    "author": {
+        "@type": "Person",
+        "name": "Mika Savijärvi",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.jpg"
+        },
+        "description": "御坂的生命維持與機械保養機構"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Misaka Maintenance Centre",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/bddvdjacket_shokaiUpRGBnoise_scaleLevel3x3.png"
+        }
+    },
+    "keywords": "",
+    "description": "",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span id="MD-burger-id" class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#0-Overture"><span class="post-toc-text">0. Overture</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#1-Animato-con-brio-ritenuto"><span class="post-toc-text">1. Animato, con brio, ritenuto</span></a></li></ol></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#2-Presto-appassionato-espressivo"><span class="post-toc-text">2. Presto, appassionato, espressivo</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#3-Largo-morendo-risoluto"><span class="post-toc-text">3. Largo, morendo, risoluto</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#4-Moderato-scherzando-lamentabile"><span class="post-toc-text">4. Moderato, scherzando, lamentabile</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#5-Encore"><span class="post-toc-text">5. Encore</span></a></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 50 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
+        
+    
+            <p class="article-headline-p">
+                深夜雑談
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.jpg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Mika Savijärvi</strong>
+        <span>Dec 13, 2020</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">devices other</i>
+    <span class="visuallyhidden">devices other</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+    <li class="mdl-menu__item">Read this article on other devices</li>
+    
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACXElEQVR42u3awW7rMAwEwPz/T7fXBzw43hVj2Q1Gp8IxZI4Okkry9fPV44WHh4eHh4eHh/cw3ise/75/OPV/77e/TmLDw8PD28k72WoPeEcBTdj5Uh7GgIeHh7eRl3/m/dackNaWMooNDw8P72G8/P21izgeHh7e9/GSJwmmTU/g4eHhPZOX/8OfHwBR4jVO7F6ea8HDw8OLeWsFsD1/31bfw8PDwzvgtWMS4iQpXESIh4eHdzEvCSV/3iYd8rRFMSceHh7eFl673edBJOWu9/jkko2Hh4e3kzcvRK2V/Nslzo8WPDw8vKt5yVbbXpHbXyfNW3h4eHj7ecnlODkG2kar+cFQF8Dw8PDwPsRrC1ftJp4fPPlCnCRH8PDw8C7mTahJ0nYtgZtfqfHw8PD28/Ikafuxtt2qKHG9/y4eHh7edt7axt1i1poG8PDw8J7Mm1+yJ0dOmxzBw8PD289buwpPjorPHjl4eHh4T+C1KYa2Aasua8XP8fDw8Pbwkm16rUUgnznHn8yJh4eHdxMv2dDXAlpL++YHCR4eHt7VvDbcPBnRHgP5EpwkiPHw8PC28NaOhPY4WWvAqpcYDw8P72Jey2ibsdpAJ41ZeHh4eHt480RDm2zNm7HyJcPDw8PbyWvLV/mT5CubrtR4eHh4N/23nhfv84AmDaxFfQ8PDw/vMt6kqN/O81oadesAHh4e3gN47dU5TzHkLVZ4eHh4f5G3FsRawiJZJjw8PLy7eJO0QvJ+khqeF8zw8PDw9vA+lgiIy2bJbDkSDw8Pbyfv+wYeHh4eHh4eHt4Dxi/BMV3JH9JhPgAAAABJRU5ErkJggg==">
+    
+</ul>
+
+    
+
+    <!-- Tags (bookmark) -->
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=深夜雑談&url=https://www.misaka-mc.tokyo/2020/12/13/Night-talk/index.html&via=Mika Savijärvi" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://www.misaka-mc.tokyo/2020/12/13/Night-talk/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+        <a class="post_share-link" href="https://telegram.me/share/url?url=https://www.misaka-mc.tokyo/2020/12/13/Night-talk/index.html&text=深夜雑談" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Telegram
+            </li>
+        </a>
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p>こんばんはこんにちは</p>
+<p>久しぶりです笑</p>
+<p>なぜかずっと家にいると夜が眠れなくなることが多くなった気がしますね。前回の更新にはもう半年が過ぎてしましまして、速いものですね。この半年間特に何にも起こったことないし、変わったものもありません。たぶん。だと思います。</p>
+<p>最近少女漫画、、とは言えないかもしれないが、こういう繊細な感情を表現する漫画にハマってて、なぜかよる眠れないときもこんなことを考えるようになった。</p>
+<p>先に言っとくけど、僕は少女漫画が好きで、避けている。なぜならそういう甘酸っぱい恋愛感情が見ると自分が哀れになってきた気がする。そう、僕は今まで一度も彼女ができたことがない。好意を抱かれたことももちろんない。少なくとも僕の知る限りにはない。</p>
+<h5 id="0-Overture"><a href="#0-Overture" class="headerlink" title="0. Overture"></a>0. Overture</h5><p>番号は0にした。漫画や小説で小学生から始まる恋愛関係がよく見られる。でも僕はいつも思う、小学生には本当に恋という感情があるのでしょうか。小学生どころか、中学一年二年もそう分からないだろう。小学校からの恋どころか、友達もあんまりないじゃないかと。なので僕が経験したのが恋のだろうか、ただの仲良しなのか、僕にはよくわからない。今更それを確かめる術もない。自分としては後者であることと信じたい。とりあえず番号は0と振っている。番外編と考えても良い。</p>
+<p>それは同じクラスの子だった。仲が良くなるのがいつだろう。たぶん五年生にもなったからの話ではないかと。もう一つはっきり覚えていることが一つ、それはうちの両親と向こうの両親も仲が良かったことだ。でもさっきも言ったように、小学生には恋と言う感情を持たない。僕も、向こうも、誰も告白なんかしなかった。しようともしなかった。少なくとも僕はそうだった。そしてごく自然に、卒業してから連絡が疎らになり、そのまま終わりを迎える。と言いたいところだが、実は去年の時一度会ったことがある。連絡が疎らになったといったが、去年のを除いて、最後にあったのが中学卒業の休み、意外と遊びの誘いが来て、そこで彼女がアメリカの高校に留学することになったことを知り、それから一切連絡がなかった。去年彼女がいったん帰国し、一緒に食事をした。これで何かの展開があると期待したら大間違いだ。これだけの時間に何の連絡もせず、正直向こうのことはほぼ何にも分からなくなった。アメリカでどういう生活を送ったのか、小学校のことどれくらい覚えているのか。僕には知らない。食事中もそれについて一切振らなかった。素直に言うと、付き合っている人がいるかも知らない。なのでこれからもたぶん何も起こらず、友達ですらならない、顔見知りの人の関係で続くのだろう。それだけの話だ。</p>
+<h5 id="1-Animato-con-brio-ritenuto"><a href="#1-Animato-con-brio-ritenuto" class="headerlink" title="1. Animato, con brio, ritenuto"></a>1. Animato, con brio, ritenuto</h5><p>これは中学時代の話である。厳密に言えば中学半ばから高校に入ったばかり頃の話である。今回は確実に恋という感情を抱いた。相手は隣クラスの女の子で、同じ部活の子でもあった。好きになったときのあの子はそんなに目立たなかった。成績は中の上、勉強も部活も真面目な子だった。交友関係も普通、クラスの中心ではないが孤立されたわけでもない。接点があったのが中学二年生の秋かな。ある日突然彼女から友達登録され、メッセージがきた。それから僕たちがいろんなことについて話た。毎日朝から夜、話題は何でも良い。何でも気が合うような気がした。ちなみに、隣クラスなのに、僕と彼女の連絡はほぼ全てネットを通じて、学校ではあまり話していなかった。</p>
+<p> 話をしている間何となく好きになった。でも告白はしなかった。するつもりはなかったのに、中学を卒業し、高校に入る前のある日、突然こう言われた。</p>
+<p> 「〇〇君って、私のこと好きでしょう」 </p>
+<p>彼女には嘘をつきたくないから正直に答えたーー</p>
+<p>「うん、好きだよ」</p>
+<p> 「あたしも〇〇君のこと好きですよ」</p>
+<p>それは嬉しかった。本当に嬉しかった。でも今から思うと、何かを欠けていた。そう、僕たちは誰も付き合うと申し出さなかった。彼女が言った「好き」は本当だったらそんなのいらないかもしれないけれど。僕らは告白しあったのに付き合っていなかった。</p>
+<p>そして、休みが終わり、登校日となった。それが告白以来の初対面である。</p>
+<p> 言い忘れたが、うちの学校では特進クラスの人と交響楽団の人がそのまま高等部に進学できる。僕も彼女交響楽団なので、高校は同じだった。そしてうれしいことがもう一つ、高校は同じクラスになった。</p>
+<p> 話が戻ります。登校日に見た彼女は、彼氏らしき人物と教室のすぐ外側にいた。彼氏らしき人物という表現は厳密ではない。それは僕の被害妄想とかではなく、確実に彼女の彼氏だった。</p>
+<p>こんなことを思い出すとなんか急につまんなくなってきた。要するに僕が好きな女の子から好きって言われたのに、ふられた。との話だった。今でもあの時彼女の行動が不可解と思っている。しかしそれはもうどうでも良くなってきた。それはもう僕には関係のない話だからだ。彼女に抱いた感情もとっくに微塵残さず消えていた。</p>
+<p>後日談というか、それからの彼女について。当時の彼氏は同じく交響楽団の一つ上の先輩、楽器がクラリネット。言い忘れたが彼女はヴァイオリンパートだった。彼女らの付き合いはそう長くはなかった。半年くらい、もしくはそれ以下。そして分かれたまもなく同じクラスで同じく交響楽団のホルンの男子と付き合った。二年に上がり、文理に分かれ、彼女は文系で僕が理系なのでクラスも同じなわけがない。なのでそれからの事はそう詳しくはないが、気付いた時彼女とホルンの男子とも別れ、同じクラスの交響ではない人と付き合っていた。</p>
+<p>そして、高校に入ると、ヴァイオリンも、勉強も、エレベーターに乗ったように急速に成長した。高二になると交響の首席ヴァイオリンになり、高三では有名大学の特別入試を受け、見事に合格した。たまにはさすがおれが好きになった女だ、おれってけっこう見る目あるなと自嘲もするけど、彼女との連絡はもちろんそれっきり一度もなかった。彼女からも何の言葉もなかった。</p>
+<h4 id="2-Presto-appassionato-espressivo"><a href="#2-Presto-appassionato-espressivo" class="headerlink" title="2. Presto, appassionato, espressivo"></a>2. Presto, appassionato, espressivo</h4><p>これを書けばちょろい男だと思われるかもしれない。次の感情が生まれたのは前の感情が消えてまもなくだった。 </p>
+<p>相手はさっき話した彼女のクラスメート、つまり彼女と同じく隣クラスの女の子だった。高校は外部の高校に進学したので好きになった時はもう同じ学校ではなかった。彼女との出会いは中学三年生の時、僕も彼女も担任に信頼されているのでよく仕事の手伝いをさせられ、職員室で授業のサボりをした。そこで彼女と出会った。仕事上の連絡のため連絡先も交換し、時々無駄話もした。僕から見れば多分友人と言える関係だった。</p>
+<p>僕はなぜその友人さんを好きになったのか、よくわからない。どこが好きなのかもわからない。いや完全にわからないとは言えない。自分の感情歴を整理している今こそ目星がつく。前の子に対する感情はそれだけあっさり消えるわけには行かない。それに加えて、感情が消えても前の子と同じクラスだから毎日会うことは避けられない。なのでその感情を何とかしなければならない。そこであの時僕と関係のいい女の子は彼女しかいないので、そのまま彼女に移したかもしれない。 こう見たらこの恋の始まりは結構雑なかもしれない。</p>
+<p>肝心なことからいうと、僕は約三年間かけて、四回くらい告白し、そして全部振られ、最後ようやく決心して彼女の連絡先をすべて消した。この三年間の物語を書くと小説一冊くらいにはなるだろう。僕と彼女は結構気が合って、趣味も同じなことが多い。高校が違っても外部のサークルをともに参加していた。彼女は何というか、関係のいい女友達もいるけど、女の子の群れにいるより男の子と遊ぶのが好きなタイプなので、実は二人きりより男何人とともに遊ぶことが多かった。誘われた時も大体そんな感じだった。最初から嫌われていたんだろう。頭数をそろえるだけのため僕を呼んだりしたのかもしれない。</p>
+<p>とはいってもそんな明白な嫌味なら僕はとっくに諦めたかもしれない。いや、諦めるという表現はあんまり好みではない。感情のことは意識により「諦める」のは無理なのだろう。彼女は明白な嫌味を表したら僕の感情もそう続かないだろう。別に僕が誘うと絶対一緒に出かけないとかはなく、一緒に食事したり勉強したりそれぞれの高校について話したりもした。告白して振られた時もいつも「いま」は誰とも付き合いたくないといわれたから、僕からは一線の希望があった。</p>
+<p>こう言ったらすべてが彼女が悪いになる。それは違う。僕も鈍感すぎて、そして諦めが悪かったのもある。今考えてみれば僕が四回も告白したのは相当しつこい人だったかもしれない。僕が女の子なら絶対僕みたいな男とは付き合わないだろうな。</p>
+<p>とりあえず今回の経験は特に物語性がなく、どこにもあるタイプの失敗談である。</p>
+<h4 id="3-Largo-morendo-risoluto"><a href="#3-Largo-morendo-risoluto" class="headerlink" title="3. Largo, morendo, risoluto"></a>3. Largo, morendo, risoluto</h4><p>連絡先を削除するだけでは何ともならない。感情を忘れることは困難であり、特にそんなに好きになった人を忘れるのがさらに難しいことであった。それからも二三回連絡先を再登録して話しかけたことがあったけど、出会うからほぼ同等の時間をかけて、ようやく何も思わなくなった。</p>
+<p>再会したのが大学三年生のときだった。彼女は一緒に美術館に行く人を探して、僕は暇だから気まぐれでじゃ一緒に行きませんかと言って、何年ぶりの再会となった。この何年間の努力は無駄ではなかった。会うときはただの友人と出かける気分。むしろそれ以下。好きではなくなった。それはよい話だろう。僕的には。</p>
+<h4 id="4-Moderato-scherzando-lamentabile"><a href="#4-Moderato-scherzando-lamentabile" class="headerlink" title="4. Moderato, scherzando, lamentabile"></a>4. Moderato, scherzando, lamentabile</h4><p>美術館に行ったまもなくの話。彼女は関西に旅行しに行って、僕にお土産を買ってもらって、僕に渡すときに起こったことだった。時間と場所を決めたのが僕だから責任は完全に僕にある。夜の新宿で、僕にお土産を渡したら彼女は一人で帰り、僕は近くのマックで遅めの晩ご飯を食べていた。その時彼女からの救援メッセージが来て、どうやら酔ったおじさんにかまわれたらしい。メッセージに書かれた場所に走り、彼女を救出し、マックまで連れて、僕は食事を続けた。それから彼女を家に送り、僕も帰宅した。それだけの事。何かロマンティックの展開が一切なかった。僕も最初から期待しなかった。相手は彼女だから。一番不可能な相手だ。</p>
+<p>この事件に関係あるかわからないが、それから僕らの連絡は確実に少なくなった。今に至っては完全に絶えたといえる。冒頭で言った小学校のあのこよりも連絡が少ない。というより僕は今もうほぼ女の子との連絡がない。なぜか僕の周りには男ばかりになっている。たまにいる女の子も大体彼氏がいる。それは何も不思議なことではない。この年になると付き合う相手がいるのが当然だろう。今まで一度も彼女できたことがないのが僕くらいしかいない。</p>
+<p>そして、将来的に僕と付き合う人を見つけるとも思えない。なぜなら僕は誰に対しても特別とは思えなくなった。好きになれなくなった。人との恋愛関係自体は期待している、欲しがっているけど、好きになれない僕が好きになる人間なんかいるはずがない。</p>
+<p>なにかのトラウマがあるわけでもない、たかが一回振られたくらいでへこむなんて、僕はそんなにやわじゃない。と信じたいが、ほんとの原因はそれかもしれない。最初の時は自分から手は出さないけど女の子からだとしたら付き合うと思ったが。そんな女の子はいないとはともかく、ほんとにいるとしても僕はその女の子のことが好きになれるのかと、自分自身を疑っていた。人生経験に乏しく他人への思いやりに欠ける僕より、良い選択がいくらでもある。やはり僕なんかは人との付き合うには不向きみたいだね。</p>
+<p>自分が恋愛なんか一生できないとわかっても、心のどこかで恋がしたいを思っている。その自己矛盾はいつから消えるだろう。これからの道はまだ長い。</p>
+<h5 id="5-Encore"><a href="#5-Encore" class="headerlink" title="5. Encore"></a>5. Encore</h5><p>「先輩は憧れていた。恋人と秘密のやり取りをすることに。電話することに。キスをすることに。恋人という、特別な相手に。そんな関係を自分が持つことに。 </p>
+<p>先輩が恋していたのは、私じゃなく恋というそれそのもの。」</p>
+<p>ーー『やがて君になる 佐伯沙弥香について (電撃文庫)』（入間 人間, 仲谷 鳰 著）より</p>
+<p>僕が欲しがっているのは恋人なのか、恋そのものなのか。</p>
+<p>その答えは未だに解らない。</p>
+
+        
+                <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
+                    <p><strong>
+                         
+                            <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This page is available under the <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a> License.
+                        </strong>
+                        <br>
+                        <strong>Link to this article: </strong><a href="https://www.misaka-mc.tokyo/2020/12/13/Night-talk/">https://www.misaka-mc.tokyo/2020/12/13/Night-talk/</a>
+                    </p>
+                </blockquote>
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 DISQUS -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'https://www.misaka-mc.tokyo/2020/12/13/Night-talk/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'https://www.misaka-mc.tokyo/2020/12/13/Night-talk/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+<script type="text/ls-javascript" id="disqus-thread-script">
+    queue.offer(function() {
+            (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document;
+                var s = d.createElement('script');
+                s.src = '//misaka-mc.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', + new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        });
+</script>
+
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2021/02/13/Mining-XMR-on-Android/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Newer
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2020/07/02/Unlock-OnePlus-VoLTE-limit/" id="post_nav-older" class="next-content">
+            Older
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/bg.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.jpg" alt="Mika Savijärvi's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        Mika Savijärvi
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="mailto: MikaSavijarvi@proton.me" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                Home
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    Archives
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2022/11/">November 2022<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2022/07/">July 2022<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2021/07/">July 2021<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2021/03/">March 2021<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2021/02/">February 2021<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/12/">December 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/07/">July 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/05/">May 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/10/">October 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/07/">July 2019<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/06/">June 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/05/">May 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/04/">April 2019<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/03/">March 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/01/">January 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/12/">December 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/08/">August 2016<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/07/">July 2016<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                Categories
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                <a class="sidebar_archives-link" href="/categories/Digital-Life/">Digital Life<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/categories/Gadget/">Gadget<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/Idea/">Idea<span class="sidebar_archives-count">10</span></a></li><li><a class="sidebar_archives-link" href="/categories/Tech/">Tech<span class="sidebar_archives-count">5</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/about" title="About">
+                
+                    <i class="material-icons sidebar-material-icons">person</i>
+                
+                About
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/Virtual-Character" title="Virtual Character">
+                
+                    <i class="material-icons sidebar-material-icons">face</i>
+                
+                Virtual Character
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/timeline" title="Timeline">
+                
+                    <i class="material-icons sidebar-material-icons">history</i>
+                
+                Timeline
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/tags" title="Tags">
+                
+                    <i class="material-icons sidebar-material-icons">dashboard</i>
+                
+                Tags
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/links" title="Also see">
+                
+                    <i class="material-icons sidebar-material-icons">language</i>
+                
+                Also see
+            </a>
+        </li>
+        
+            <li class="divider"></li>
+        
+    
+
+    <!-- Article Number  -->
+    
+        <li>
+            <a href="/archives">
+                Number of articles
+                <span class="sidebar-badge">24</span>
+            </a>
+        </li>
+        
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+
+<!-- Theme Material -->
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+        <a href="https://twitter.com/MikaSavijarvi" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-twitter">
+                <span class="visuallyhidden">Twitter</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Facebook -->
+    
+
+    <!-- Google + -->
+    
+        <a href="https://www.youtube.com/channel/UCvfafvKLS6bHxWDJ24H6RcQ" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-gplus">
+                <span class="visuallyhidden">Google Plus</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/mika-savijarvi" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+        <a href="https://t.me/MSavijarvi" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-telegram">
+                <span class="visuallyhidden">Telegram</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- V2EX -->
+    
+
+    <!-- Segmentfault -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;<span year></span>&nbsp;Mika Savijärvi
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?wgjW/HuQG9JDgvPDPoRAng==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?LT4t6iE6m8TO1BLGGiNJqA==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+
+   <!-- 使用 DISQUS js 代码 -->
+<script id="dsq-count-scr" src="//misaka-mc.disqus.com/count.js" async></script>
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('
+<link rel="stylesheet" href="/css/uc.css">
+');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+
+    
+        <script>lsloader.load("hanabi","/js/hanabi-browser-bundle.js?5+2z7ZZmFuZK5IcimlZbxw==", true)</script>
+    
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+        
+        
+        HanabiBrowser.start('pre code',true);
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    var copyrightNow = new Date().getFullYear();
+    var textContent = document.querySelector('span[year]')
+
+    copyrightSince = 2016;
+    if (copyrightSince === copyrightNow||copyrightSince === 0000) {
+        textContent.textContent = copyrightNow
+    } else {
+        textContent.textContent = copyrightSince + ' - ' + copyrightNow
+    }
+
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.6 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>

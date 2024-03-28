@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="en">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.6 -->
+    <script>
+        window.materialVersion = "1.5.6"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0',
+            '1.5.2',
+            '1.5.5'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+
+
+    <link rel="dns-prefetch" href="https://misaka-mc.disqus.com"/>
+
+
+
+
+
+    <link rel="dns-prefetch" href="../fonts"/>
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            MP3 vs AAC 音質比較！ | 
+        
+        Misaka Maintenance Centre
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/bddvdjacket_shokaiUpRGBnoise_scaleLevel3x3.png">
+    <link rel="icon" href="/img/bddvdjacket_shokaiUpRGBnoise_scaleLevel3x3.png">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="">
+    <meta name="keywords" content=",Review,Music,Codec">
+    <meta name="theme-color" content="#413583">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.en.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?uVzgA6RLrOm13Ukw8Qgy+A==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #0B0858;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #413583 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #413583 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #413583 !important;
+  }
+
+  .toTop {
+    background: #B3B3B3 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #B3B3B3;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #B3B3B3;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #B3B3B3;
+  }
+
+  .post-toc a:hover {
+    color: #0B0858;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-image: url(/img/07.jpg);
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="../fonts/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?ezyEvm8ST5CGfpA+kFFi1g==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Misaka Maintenance Centre">
+    <meta name="msapplication-starturl" content="https://www.misaka-mc.tokyo/2016/07/02/MP3-vs-AAC/">
+    <meta name="msapplication-navbutton-color" content="#413583">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Misaka Maintenance Centre">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/bddvdjacket_shokaiUpRGBnoise_scaleLevel3x3.png">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="https://www.misaka-mc.tokyo/2016/07/02/MP3-vs-AAC/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="MP3 vs AAC 音質比較！ | Misaka Maintenance Centre">
+    <meta property="og:image" content="/img/bddvdjacket_shokaiUpRGBnoise_scaleLevel3x3.png">
+    <meta property="og:description" content="">
+    <meta property="og:article:tag" content="Review"> <meta property="og:article:tag" content="Music"> <meta property="og:article:tag" content="Codec"> 
+
+    
+        <meta property="article:published_time" content="Sat Jul 02 2016 09:00:19 GMT+0900">
+        <meta property="article:modified_time" content="Wed Jul 20 2022 14:08:16 GMT+0900">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="https://www.misaka-mc.tokyo/2016/07/02/MP3-vs-AAC/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://www.misaka-mc.tokyo/2016/07/02/MP3-vs-AAC/index.html",
+    "headline": "MP3 vs AAC 音質比較！",
+    "datePublished": "Sat Jul 02 2016 09:00:19 GMT+0900",
+    "dateModified": "Wed Jul 20 2022 14:08:16 GMT+0900",
+    "author": {
+        "@type": "Person",
+        "name": "Mika Savijärvi",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.jpg"
+        },
+        "description": "御坂的生命維持與機械保養機構"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Misaka Maintenance Centre",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/bddvdjacket_shokaiUpRGBnoise_scaleLevel3x3.png"
+        }
+    },
+    "keywords": ",Review,Music,Codec",
+    "description": "",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span id="MD-burger-id" class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E9%A0%BB%E7%8E%87%E4%B8%8A%E9%99%90%E8%88%87%E9%9F%B3%E8%B3%AA%E7%9A%84%E9%97%9C%E4%BF%82"><span class="post-toc-text">頻率上限與音質的關係</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#%E5%8E%9F%E5%A7%8B%E7%9A%84WAV%E6%A0%BC%E5%BC%8F%E9%9F%B3%E9%A0%BB"><span class="post-toc-text">原始的WAV格式音頻</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#%E5%85%A9%E7%A8%AE%E6%A0%BC%E5%BC%8F%E7%9A%84%E6%96%87%E4%BB%B6%E5%A4%A7%E5%B0%8F%E6%AF%94%E8%BC%83"><span class="post-toc-text">兩種格式的文件大小比較</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#FFT%E6%B3%A2%E5%BD%A2%E5%B0%8D%E6%AF%94"><span class="post-toc-text">FFT波形對比</span></a></li></ol></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E7%B5%90%E8%AB%96"><span class="post-toc-text">結論</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#1-%E6%AF%94%E7%89%B9%E7%8E%87%E8%88%87%E6%9C%80%E9%AB%98%E9%A0%BB%E7%8E%87%E7%9A%84%E9%97%9C%E4%BF%82"><span class="post-toc-text">1. 比特率與最高頻率的關係</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#2-%E6%AF%94%E7%89%B9%E7%8E%87%E8%88%87%E6%96%87%E4%BB%B6%E5%A4%A7%E5%B0%8F%E7%9A%84%E9%97%9C%E4%BF%82"><span class="post-toc-text">2. 比特率與文件大小的關係</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#3-%E6%B3%A2%E5%BD%A2%E7%89%B9%E9%BB%9E"><span class="post-toc-text">3. 波形特點</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#4-%E6%9C%80%E9%AB%98%E9%A0%BB%E7%8E%87%E8%88%87%E9%9F%B3%E8%B3%AA"><span class="post-toc-text">4. 最高頻率與音質</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#5-%E5%BB%BA%E8%AD%B0"><span class="post-toc-text">5. 建議</span></a></li></ol></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E8%A3%9C%E5%85%85"><span class="post-toc-text">補充</span></a></li></ol></li></ol></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 50 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
+        
+    
+            <p class="article-headline-p">
+                MP3 vs AAC 音質比較！
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.jpg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Mika Savijärvi</strong>
+        <span>Jul 02, 2016</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">devices other</i>
+    <span class="visuallyhidden">devices other</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+    <li class="mdl-menu__item">Read this article on other devices</li>
+    
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACbElEQVR42u3aQW7DMAwEQP//0+m1QBBnScqyEYxORZIaGh9EYcnj9dPrwMPDw8PDw8PDexjviNf/33989Nvvz789f3J1b3h4eHg7eV+O2uKGcvb70/JX+XEPeHh4eBt5eTFINnFeJHqvMtobHh4e3sN4STFYdsTj4eHh/QQvjySqR/9D6x4eHh7eOIzIj/LzKLb3/MuzFjw8PLyY12uA7fn7tv4eHh4e3gdedeUBbh5MVGOLLzvEw8PDu5iXbOX88/xFzEON6Jl4eHh4W3i9wHQS8ub45JKNh4eHt5OXXHzzcfy8cbXqCXh4eHhP4K0at5p82wsy8PDw8O7i5Y3/JJKotriqv8HDw8Pbz6tef6uHeBIf5M2wKBzBw8PDu5g3Ocqrzf7JUNfiyQg8PDy8AS8JWOfRQx4B96JbPDw8vHt5+SU4P+Krl+xJwcDDw8PbyZs0wI5gJf+b/6Y8U4aHh4e3iNcbEYgO6LitNS85eHh4ePt5vU1PRqyqTbhCWIyHh4e3kZcXgN7QwKu1qmNeeHh4eFfzqqT882pIUR1d/bhPPDw8vIt5awtDPohQDSAKgwV4eHh4W3jVa2u1ePTC4ma4jIeHh3cxL4lKk4tvtfVVLTOFKz4eHh7exbxeqJpHt5Pikb8yPDw8vJ28I175NToZI+gFuM0rNR4eHt4FvFXN+6QkrIpu8fDw8J7Aq46KJg3+5KCfFKdy1oKHh4e3ndcbh5oc98tmyvDw8PBu5fXiiV5gkbwmPDw8vLt41eGqtTFuftX+sjc8PDy8LbxlQcCgxVUNfAuFAQ8PD28p7/cWHh4eHh4eHh7eA9YfscYrJrSC+jkAAAAASUVORK5CYII=">
+    
+</ul>
+
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-none-link" href="/tags/Codec/" rel="tag">Codec</a></li><li class="mdl-menu__item"><a class="post_tag-none-link" href="/tags/Music/" rel="tag">Music</a></li><li class="mdl-menu__item"><a class="post_tag-none-link" href="/tags/Review/" rel="tag">Review</a>
+    </ul>
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=MP3 vs AAC 音質比較！&url=https://www.misaka-mc.tokyo/2016/07/02/MP3-vs-AAC/index.html&via=Mika Savijärvi" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://www.misaka-mc.tokyo/2016/07/02/MP3-vs-AAC/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+        <a class="post_share-link" href="https://telegram.me/share/url?url=https://www.misaka-mc.tokyo/2016/07/02/MP3-vs-AAC/index.html&text=MP3 vs AAC 音質比較！" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Telegram
+            </li>
+        </a>
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <p>號稱擁有高壓縮率、低磁盤佔用特點的aac文件格式與傳統的mp3文件的音質比較。<br>使用的編碼器：</p>
+<ul>
+<li>MP3編碼器：午後のこ～だ3（ “gogo.dll” based on lame ver3.88） </li>
+<li>AAC編碼器：QuickTime Pro</li>
+</ul>
+<p>對於不可逆（有損的）音頻壓縮格式，會將一部分超出人耳分辨範圍的音頻截除來達到減少文件大小的目的。這篇文章主要就是對比了主流的MP3和AAC兩種格式對音質產生的不同影響。<br>首先需要明確一個觀點：<strong>音質並不由最高頻率決定，但毫無疑問最高頻率和音質有關</strong>。</p>
+<hr>
+<h2 id="頻率上限與音質的關係"><a href="#頻率上限與音質的關係" class="headerlink" title="頻率上限與音質的關係"></a>頻率上限與音質的關係</h2><h5 id="原始的WAV格式音頻"><a href="#原始的WAV格式音頻" class="headerlink" title="原始的WAV格式音頻"></a>原始的WAV格式音頻</h5><p><img src="https://misaka-mc.tokyo/images/MP3-vs-AAC-%E9%9F%B3%E8%B3%AA%E6%AF%94%E8%BC%83%EF%BC%81/487d987998211a1e3a70baa1c36dbd1d_1440w.jpg" alt="wav頻率圖"></p>
+<p>該音頻的參數爲44.1kHz, 16bit，時長15s，文件大小爲2.7MB。<br>可以點擊<a target="_blank" rel="noopener" href="http://kobo-aok.jp/is1/sound/3track.wav">這裏</a>試聽。</p>
+<h5 id="兩種格式的文件大小比較"><a href="#兩種格式的文件大小比較" class="headerlink" title="兩種格式的文件大小比較"></a>兩種格式的文件大小比較</h5><p><img src="https://misaka-mc.tokyo/images/MP3-vs-AAC-%E9%9F%B3%E8%B3%AA%E6%AF%94%E8%BC%83%EF%BC%81/b985dce9b94db5be09533ed6effc388f_r.jpg" alt="文件體積對比"></p>
+<h5 id="FFT波形對比"><a href="#FFT波形對比" class="headerlink" title="FFT波形對比"></a>FFT波形對比</h5><p>FFT是快速傅立葉變換的縮寫，通過觀察FFT波形的拐點，可以直觀的表示出該音頻的最高頻率。</p>
+<ul>
+<li><p><a href="https://link.zhihu.com/?target=http://kobo-aok.jp/is1/sound/3track.wav">原wav格式音頻</a><br><img src="https://misaka-mc.tokyo/images/MP3-vs-AAC-%E9%9F%B3%E8%B3%AA%E6%AF%94%E8%BC%83%EF%BC%81/e3ced3d52f6f960f2a753ed789b7eb25_1440w.jpg" alt="FFT-WAV"></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="http://kobo-aok.jp/is2/sound/3track_320kmp3.mp3">320kbps MP3</a> 對比 <a target="_blank" rel="noopener" href="http://kobo-aok.jp/is3/sound/3track_320kaac_hq.mp4">320kbps AAC</a><br><img src="https://misaka-mc.tokyo/images/MP3-vs-AAC-%E9%9F%B3%E8%B3%AA%E6%AF%94%E8%BC%83%EF%BC%81/aa8fdb02ac422e63894ecbb816eb1b25_r.jpg" alt="320kbps"></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="http://kobo-aok.jp/is2/sound/3track_256kmp3.mp3">256kbps MP3</a> 對比 <a target="_blank" rel="noopener" href="http://kobo-aok.jp/is3/sound/3track_256kaac_hq.mp4">256kbps AAC</a><br><img src="https://misaka-mc.tokyo/images/MP3-vs-AAC-%E9%9F%B3%E8%B3%AA%E6%AF%94%E8%BC%83%EF%BC%81/24ca5f1ec4365270e8e1aedde4f74ea4_r.jpg" alt="256kbps"></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="http://kobo-aok.jp/is2/sound/3track_192kmp3.mp3">192kbps MP3</a> 對比 <a target="_blank" rel="noopener" href="http://kobo-aok.jp/is3/sound/3track_192kaac_hq.mp4">192kbps AAC</a><br><img src="https://misaka-mc.tokyo/images/MP3-vs-AAC-%E9%9F%B3%E8%B3%AA%E6%AF%94%E8%BC%83%EF%BC%81/dc043e0ed9f35b8af195cf67353c2013_r.jpg" alt="192kbps"></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="http://kobo-aok.jp/is2/sound/3track_160kmp3gogo.mp3">160kbps MP3</a> 對比 <a target="_blank" rel="noopener" href="http://kobo-aok.jp/is3/sound/3track_160kaac_hq.mp4">160kbps AAC</a><br><img src="https://misaka-mc.tokyo/images/MP3-vs-AAC-%E9%9F%B3%E8%B3%AA%E6%AF%94%E8%BC%83%EF%BC%81/c8374d2be5d482c258a1bc8c675fe827_r.jpg" alt="160kbps"></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="http://kobo-aok.jp/is3/sound/3track_128kmp3gogo.mp3">128kbps MP3</a> 對比 <a target="_blank" rel="noopener" href="http://kobo-aok.jp/is3/sound/3track_128kaac_hq.mp4">128kbps AAC</a><br><img src="https://misaka-mc.tokyo/images/MP3-vs-AAC-%E9%9F%B3%E8%B3%AA%E6%AF%94%E8%BC%83%EF%BC%81/37fe455ba911c611073edfcf9303b3ca_r.jpg" alt="128kbps"></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="http://kobo-aok.jp/is3/sound/3track_96kmp3gogo.mp3">96kbps MP3</a> 對比 <a target="_blank" rel="noopener" href="http://kobo-aok.jp/is3/sound/3track_96kaac_hq.mp4">96kbps AAC</a><br><img src="https://misaka-mc.tokyo/images/MP3-vs-AAC-%E9%9F%B3%E8%B3%AA%E6%AF%94%E8%BC%83%EF%BC%81/2ab4a95aeb04bec88e448fcc0bb2397b_r.jpg" alt="96kbps"></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="http://kobo-aok.jp/is3/sound/3track_64kmp3gogo.mp3">64kbps MP3</a> 對比 <a target="_blank" rel="noopener" href="http://kobo-aok.jp/is3/sound/3track_64kaac_hq.mp4">64kbps AAC</a><br><img src="https://misaka-mc.tokyo/images/MP3-vs-AAC-%E9%9F%B3%E8%B3%AA%E6%AF%94%E8%BC%83%EF%BC%81/c9264925bf3ea05b770143b0fb4d621f_r.jpg" alt="64kbps"></p>
+<h4 id="結論"><a href="#結論" class="headerlink" title="結論"></a>結論</h4></li>
+</ul>
+<h5 id="1-比特率與最高頻率的關係"><a href="#1-比特率與最高頻率的關係" class="headerlink" title="1. 比特率與最高頻率的關係"></a>1. 比特率與最高頻率的關係</h5><ul>
+<li>128kbps 以下的時候，AAC的最高頻率較高。</li>
+<li>192kbps 以上的時候，MP3的最高頻率較高。</li>
+<li>160kbps 時，二者最高頻率基本相同<br><img src="https://misaka-mc.tokyo/images/MP3-vs-AAC-%E9%9F%B3%E8%B3%AA%E6%AF%94%E8%BC%83%EF%BC%81/7c247c513fc29c81c3dba8acb8293efb_r.jpg" alt="Bitrate-Maxfreq"></li>
+</ul>
+<h5 id="2-比特率與文件大小的關係"><a href="#2-比特率與文件大小的關係" class="headerlink" title="2. 比特率與文件大小的關係"></a>2. 比特率與文件大小的關係</h5><p>在所有已測試比特率下，兩種編碼格式的音頻文件大小均基本相同。<br><img src="https://misaka-mc.tokyo/images/MP3-vs-AAC-%E9%9F%B3%E8%B3%AA%E6%AF%94%E8%BC%83%EF%BC%81/be3bc91769102f18d10397e27221c7bc_r.jpg" alt="Bitrate-Filesize"></p>
+<h5 id="3-波形特點"><a href="#3-波形特點" class="headerlink" title="3. 波形特點"></a>3. 波形特點</h5><p>與AAC相比，當比特率下降時，MP3的最高頻率降低的更爲明顯。我們可以明顯的看出，當比特率低於192kbps時，MP3編碼的高頻部分的響度會急劇下降，直接降至最低點。而AAC編碼的高頻響度則不會直接降到最低。儘管也出現了一個快速下降的階段，但之後會變成緩慢下降，最終降至和MP3編碼同一水平。</p>
+<p>也就是說，在低比特率的情況下，AAC編碼可以保留比MP3更多的高頻信息，這裏的更多指的不僅是最高頻率比MP3更高，在超過FFT圖像上最高頻率的部分依舊仍保留一部分高頻信息。。</p>
+<h5 id="4-最高頻率與音質"><a href="#4-最高頻率與音質" class="headerlink" title="4. 最高頻率與音質"></a>4. 最高頻率與音質</h5><p>如果默認最高頻率直接影響音質的話，那麼僅需96kbps的AAC編碼即可達到與128kbps MP3編碼的相同甚至超過的水平。</p>
+<h5 id="5-建議"><a href="#5-建議" class="headerlink" title="5. 建議"></a>5. 建議</h5><ul>
+<li>192kbps以上時使用MP3編碼，128kbps以下時使用AAC編碼</li>
+</ul>
+<hr>
+<h4 id="補充"><a href="#補充" class="headerlink" title="補充"></a>補充</h4><p>關於 QuickTime Pro 的「編碼器品質」選項<br>QuickTime Pro 的AAC編碼器共有「標準品質」「高品質」「最高品質」三種設置。<br>通過對比，可以認爲這三種設置對音質基本沒有任何影響。<br>在比特率爲64kbps和320kbps時，三種設置的FFT波形如下。</p>
+<ul>
+<li>64kbps <a target="_blank" rel="noopener" href="http://kobo-aok.jp/is3/sound/3track_64kaac_sd.mp4">「標準品質」</a>、<a target="_blank" rel="noopener" href="http://kobo-aok.jp/is3/sound/3track_64kaac_hq.mp4">「高品質」</a>、<a target="_blank" rel="noopener" href="http://kobo-aok.jp/is3/sound/3track_64kaac_sq.mp4">「最高品質」</a><br><img src="https://misaka-mc.tokyo/images/MP3-vs-AAC-%E9%9F%B3%E8%B3%AA%E6%AF%94%E8%BC%83%EF%BC%81/cbe3b86afe2ed36cc4665520ecbd6068_r.jpg" alt="64kbps AAC"></li>
+<li>320kbps <a target="_blank" rel="noopener" href="http://kobo-aok.jp/is3/sound/3track_320kaac_sd.mp4">「標準品質」</a>、<a target="_blank" rel="noopener" href="http://kobo-aok.jp/is3/sound/3track_320kaac_hq.mp4">「高品質」</a>、<a target="_blank" rel="noopener" href="http://kobo-aok.jp/is3/sound/3track_320kaac_sq.mp4">「最高品質」</a><br><img src="https://misaka-mc.tokyo/images/MP3-vs-AAC-%E9%9F%B3%E8%B3%AA%E6%AF%94%E8%BC%83%EF%BC%81/a5d83c7965e6ce3ec0bc5b9e8f59f5d5_r.jpg" alt="320kbps AAC"></li>
+</ul>
+<hr>
+<p><a target="_blank" rel="noopener" href="http://kobo-aok.jp/is3/MP3-vs-AAC-%E9%9F%B3%E8%B3%AA%E6%AF%94%E8%BC%83%EF%BC%81.htm">原文地址</a>, 僅作搬運/翻譯。</p>
+
+        
+                <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
+                    <p><strong>
+                         
+                            <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This page is available under the <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a> License.
+                        </strong>
+                        <br>
+                        <strong>Link to this article: </strong><a href="https://www.misaka-mc.tokyo/2016/07/02/MP3-vs-AAC/">https://www.misaka-mc.tokyo/2016/07/02/MP3-vs-AAC/</a>
+                    </p>
+                </blockquote>
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 DISQUS -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'https://www.misaka-mc.tokyo/2016/07/02/MP3-vs-AAC/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'https://www.misaka-mc.tokyo/2016/07/02/MP3-vs-AAC/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+<script type="text/ls-javascript" id="disqus-thread-script">
+    queue.offer(function() {
+            (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document;
+                var s = d.createElement('script');
+                s.src = '//misaka-mc.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', + new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        });
+</script>
+
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2016/08/16/Anime-4k-Project/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Newer
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/bg.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.jpg" alt="Mika Savijärvi's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        Mika Savijärvi
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="mailto: MikaSavijarvi@proton.me" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                Home
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    Archives
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2022/11/">November 2022<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2022/07/">July 2022<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2021/07/">July 2021<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2021/03/">March 2021<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2021/02/">February 2021<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/12/">December 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/07/">July 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/05/">May 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/10/">October 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/07/">July 2019<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/06/">June 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/05/">May 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/04/">April 2019<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/03/">March 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/01/">January 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/12/">December 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/08/">August 2016<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/07/">July 2016<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                Categories
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                <a class="sidebar_archives-link" href="/categories/Digital-Life/">Digital Life<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/categories/Gadget/">Gadget<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/Idea/">Idea<span class="sidebar_archives-count">10</span></a></li><li><a class="sidebar_archives-link" href="/categories/Tech/">Tech<span class="sidebar_archives-count">5</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/about" title="About">
+                
+                    <i class="material-icons sidebar-material-icons">person</i>
+                
+                About
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/Virtual-Character" title="Virtual Character">
+                
+                    <i class="material-icons sidebar-material-icons">face</i>
+                
+                Virtual Character
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/timeline" title="Timeline">
+                
+                    <i class="material-icons sidebar-material-icons">history</i>
+                
+                Timeline
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/tags" title="Tags">
+                
+                    <i class="material-icons sidebar-material-icons">dashboard</i>
+                
+                Tags
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/links" title="Also see">
+                
+                    <i class="material-icons sidebar-material-icons">language</i>
+                
+                Also see
+            </a>
+        </li>
+        
+            <li class="divider"></li>
+        
+    
+
+    <!-- Article Number  -->
+    
+        <li>
+            <a href="/archives">
+                Number of articles
+                <span class="sidebar-badge">24</span>
+            </a>
+        </li>
+        
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+
+<!-- Theme Material -->
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+        <a href="https://twitter.com/MikaSavijarvi" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-twitter">
+                <span class="visuallyhidden">Twitter</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Facebook -->
+    
+
+    <!-- Google + -->
+    
+        <a href="https://www.youtube.com/channel/UCvfafvKLS6bHxWDJ24H6RcQ" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-gplus">
+                <span class="visuallyhidden">Google Plus</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/mika-savijarvi" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+        <a href="https://t.me/MSavijarvi" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-telegram">
+                <span class="visuallyhidden">Telegram</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- V2EX -->
+    
+
+    <!-- Segmentfault -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;<span year></span>&nbsp;Mika Savijärvi
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?wgjW/HuQG9JDgvPDPoRAng==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?LT4t6iE6m8TO1BLGGiNJqA==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+
+   <!-- 使用 DISQUS js 代码 -->
+<script id="dsq-count-scr" src="//misaka-mc.disqus.com/count.js" async></script>
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('
+<link rel="stylesheet" href="/css/uc.css">
+');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+
+    
+        <script>lsloader.load("hanabi","/js/hanabi-browser-bundle.js?5+2z7ZZmFuZK5IcimlZbxw==", true)</script>
+    
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+        
+        
+        HanabiBrowser.start('pre code',true);
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    var copyrightNow = new Date().getFullYear();
+    var textContent = document.querySelector('span[year]')
+
+    copyrightSince = 2016;
+    if (copyrightSince === copyrightNow||copyrightSince === 0000) {
+        textContent.textContent = copyrightNow
+    } else {
+        textContent.textContent = copyrightSince + ' - ' + copyrightNow
+    }
+
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.6 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>

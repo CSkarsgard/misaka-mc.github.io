@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="en">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.6 -->
+    <script>
+        window.materialVersion = "1.5.6"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0',
+            '1.5.2',
+            '1.5.5'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+
+
+    <link rel="dns-prefetch" href="https://misaka-mc.disqus.com"/>
+
+
+
+
+
+    <link rel="dns-prefetch" href="../fonts"/>
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            如何更好地使用 Android 手機（2022） | 
+        
+        Misaka Maintenance Centre
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/bddvdjacket_shokaiUpRGBnoise_scaleLevel3x3.png">
+    <link rel="icon" href="/img/bddvdjacket_shokaiUpRGBnoise_scaleLevel3x3.png">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="">
+    <meta name="keywords" content=",Privacy,Android,Google Pixel,Guide">
+    <meta name="theme-color" content="#413583">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.en.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?uVzgA6RLrOm13Ukw8Qgy+A==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #0B0858;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #413583 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #413583 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #413583 !important;
+  }
+
+  .toTop {
+    background: #B3B3B3 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #B3B3B3;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #B3B3B3;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #B3B3B3;
+  }
+
+  .post-toc a:hover {
+    color: #0B0858;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-image: url(/img/07.jpg);
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="../fonts/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?ezyEvm8ST5CGfpA+kFFi1g==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Misaka Maintenance Centre">
+    <meta name="msapplication-starturl" content="https://www.misaka-mc.tokyo/2022/07/20/a-better-way-to-use-an-android-phone-2022/">
+    <meta name="msapplication-navbutton-color" content="#413583">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Misaka Maintenance Centre">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/bddvdjacket_shokaiUpRGBnoise_scaleLevel3x3.png">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="https://www.misaka-mc.tokyo/2022/07/20/a-better-way-to-use-an-android-phone-2022/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="如何更好地使用 Android 手機（2022） | Misaka Maintenance Centre">
+    <meta property="og:image" content="/img/bddvdjacket_shokaiUpRGBnoise_scaleLevel3x3.png">
+    <meta property="og:description" content="">
+    <meta property="og:article:tag" content="Privacy"> <meta property="og:article:tag" content="Android"> <meta property="og:article:tag" content="Google Pixel"> <meta property="og:article:tag" content="Guide"> 
+
+    
+        <meta property="article:published_time" content="Wed Jul 20 2022 11:14:44 GMT+0900">
+        <meta property="article:modified_time" content="Wed Jul 20 2022 12:00:30 GMT+0900">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="https://www.misaka-mc.tokyo/2022/07/20/a-better-way-to-use-an-android-phone-2022/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://www.misaka-mc.tokyo/2022/07/20/a-better-way-to-use-an-android-phone-2022/index.html",
+    "headline": "如何更好地使用 Android 手機（2022）",
+    "datePublished": "Wed Jul 20 2022 11:14:44 GMT+0900",
+    "dateModified": "Wed Jul 20 2022 12:00:30 GMT+0900",
+    "author": {
+        "@type": "Person",
+        "name": "Mika Savijärvi",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.jpg"
+        },
+        "description": "御坂的生命維持與機械保養機構"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Misaka Maintenance Centre",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/bddvdjacket_shokaiUpRGBnoise_scaleLevel3x3.png"
+        }
+    },
+    "keywords": ",Privacy,Android,Google Pixel,Guide",
+    "description": "",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span id="MD-burger-id" class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%89%8D%E8%A8%80"><span class="post-toc-text">前言</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%A8%81%E8%84%85%E6%A8%A1%E5%9E%8B%E5%88%86%E6%9E%90"><span class="post-toc-text">威脅模型分析</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E6%9C%80%E4%BD%B3%E5%AF%A6%E8%B8%90"><span class="post-toc-text">最佳實踐</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E8%B3%BC%E8%B2%B7%E6%B1%BA%E7%AD%96"><span class="post-toc-text">購買決策</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%B5%B1%E7%9A%84%E9%81%B8%E6%93%87"><span class="post-toc-text">操作系統的選擇</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E9%A0%90%E5%82%99%E7%9F%A5%E8%AD%98%EF%BC%9A%E5%95%93%E5%8B%95%E6%99%82%E9%A9%97%E8%AD%89%EF%BC%88Verified-Boot%EF%BC%89"><span class="post-toc-text">預備知識：啓動時驗證（Verified Boot）</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#GrapheneOS"><span class="post-toc-text">GrapheneOS</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#CalyxOS"><span class="post-toc-text">CalyxOS</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#DivestOS"><span class="post-toc-text">DivestOS</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#LineageOS-%E5%92%8C%E5%85%B6%E4%BB%96%E3%80%8C%E7%AC%AC%E4%B8%89%E6%96%B9-ROM%E3%80%8D"><span class="post-toc-text">LineageOS 和其他「第三方 ROM」</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E4%BF%9D%E8%AD%B7%E9%9A%B1%E7%A7%81%E7%9A%84%E4%B8%80%E4%BA%9B-Android-%E7%89%B9%E6%80%A7"><span class="post-toc-text">保護隱私的一些 Android 特性</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E5%A4%9A%E7%94%A8%E6%88%B7%E6%94%AF%E6%8C%81"><span class="post-toc-text">多用户支持</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E5%B7%A5%E4%BD%9C%E8%B3%87%E6%96%99"><span class="post-toc-text">工作資料</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#AppOpsManager%EF%BC%88App-Ops%EF%BC%89"><span class="post-toc-text">AppOpsManager（App-Ops）</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E5%B1%95%E6%9C%9B%EF%BC%9AAndroid-13"><span class="post-toc-text">展望：Android 13</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E6%87%89%E7%94%A8%E5%95%86%E5%BA%97"><span class="post-toc-text">應用商店</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#F-Droid"><span class="post-toc-text">F-Droid</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Google-Play"><span class="post-toc-text">Google Play</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E5%BB%A3%E5%91%8A%E8%88%87%E8%BF%BD%E8%B9%A4%E5%99%A8"><span class="post-toc-text">廣告與追蹤器</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E4%B8%80%E4%BA%9B%E5%AF%A6%E7%94%A8%E6%87%89%E7%94%A8"><span class="post-toc-text">一些實用應用</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E7%AD%86%E8%A8%98"><span class="post-toc-text">筆記</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E5%AF%86%E7%A2%BC%E7%AE%A1%E7%90%86%E5%99%A8%EF%BC%8C%E9%9B%99%E5%9B%A0%E7%B4%A0%E9%A9%97%E8%AD%89%E5%99%A8"><span class="post-toc-text">密碼管理器，雙因素驗證器</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E7%80%8F%E8%A6%BD%E5%99%A8%E8%88%87-WebView"><span class="post-toc-text">瀏覽器與 WebView</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#%E5%A4%A7%E9%87%8F%E4%BD%BF%E7%94%A8%E6%8B%93%E5%B1%95%E8%88%87%E6%8F%92%E4%BB%B6%E4%B8%8D%E6%98%AF%E6%9C%80%E4%BD%B3%E5%AF%A6%E8%B8%90%EF%BC%8C%E5%8F%88%E5%8F%8A-Firefox-for-Android-%E7%9A%84%E5%95%8F%E9%A1%8C"><span class="post-toc-text">大量使用拓展與插件不是最佳實踐，又及 Firefox for Android 的問題</span></a></li></ol></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#RSS-%E9%96%B2%E8%AE%80%E5%99%A8"><span class="post-toc-text">RSS 閲讀器</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E5%85%B6%E4%BB%96%E5%80%BC%E5%BE%97%E6%8E%A8%E8%96%A6%E7%9A%84%E5%AF%A6%E7%94%A8%E6%87%89%E7%94%A8"><span class="post-toc-text">其他值得推薦的實用應用</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#%E5%AF%A6%E7%94%A8%E5%BB%BA%E8%AD%B0"><span class="post-toc-text">實用建議</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Root"><span class="post-toc-text">Root</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#%E5%A6%82%E6%9E%9C%E7%A2%BA%E5%AF%A6%E9%9C%80%E8%A6%81-Root%E2%80%A6%E2%80%A6"><span class="post-toc-text">如果確實需要 Root……</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#SafetyNet"><span class="post-toc-text">SafetyNet</span></a></li></ol></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E5%AA%92%E9%AB%94%E5%85%83%E6%95%B8%E6%93%9A%EF%BC%8C%E3%80%8C%E6%89%93%E7%A2%BC%E3%80%8D"><span class="post-toc-text">媒體元數據，「打碼」</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E7%B3%BB%E7%B5%B1%E6%9B%B4%E6%96%B0"><span class="post-toc-text">系統更新</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E3%80%8C%E5%AE%89%E5%85%A8%E7%AE%A1%E5%AE%B6%E3%80%8D"><span class="post-toc-text">「安全管家」</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#%E6%B8%9B%E5%B0%91%E8%B6%B3%E8%B7%A1"><span class="post-toc-text">減少足跡</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E8%87%B4%E8%AC%9D"><span class="post-toc-text">致謝</span></a></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 50 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
+        
+    
+            <p class="article-headline-p">
+                如何更好地使用 Android 手機（2022）
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.jpg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Mika Savijärvi</strong>
+        <span>Jul 20, 2022</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">devices other</i>
+    <span class="visuallyhidden">devices other</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+    <li class="mdl-menu__item">Read this article on other devices</li>
+    
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQ4AAAEOCAAAAABd2qZ5AAADiElEQVR42u3awW7jMAwE0P7/T+9eF1gkmSGl1gWeTwXqyNbLgRE5X39c/1xfCHDgwIEDBw4cOHDgeDDHV3z9f/+rdd7f+eq5r+55/5TNXnDgwIEDxz2OD6VozdEy5TSbveDAgQMHjtsc7zeQPPL9ame3lLzn+3tw4MCBA8cTONrSG7XnArKkYOPAgQMHjt/IkTf18tZee+fjfnfgwIEDB451Q23WFtyMlPJD47f2SnHgwIEDx6FAw5P//oF8Bw4cOHDgOHSdDdXNGosHdoEDBw4cOI5y5A24zVjoRiQij0qsQtg4cODAgaPkqD8cF9RNZKE9vLUNTRw4cODAcZsjOXQlZXh/T/5Wp8ZROHDgwIHjLEd7VGvL8yYeN/ti8tVw4MCBA8cNjnyYFC0dvNC+oObxuwNTOBw4cODAcWiC35LlDbv28NZGK1oyHDhw4MBxliMZ7bQBuKSUtsGIzejrQKABBw4cOHCUUblZsUxeN48jzAIK7ais6JXiwIEDB44RR16oNsOhfUuxLZ85Og4cOHDgOMuRhxjauFtebtsSuyn2xe8OHDhw4MAx4mhHRPkYaTZkyj+7uRMHDhw4cNzjaMtefvBrD3izZmU7PMOBAwcOHE/gaIdSRWOubBdughTFiRYHDhw4cCw4NkvPQmz5VmeNv/rnAg4cOHDgOMrRvmjdeiuHQ7OWYrIaDhw4cOD4Ho52oWTA04LuG4VtgceBAwcOHPc4ZhGB2f3tlmZY778eHDhw4MBxm6MtfrNPJa265IuZDag+HCNx4MCBA8cFjrZROIsOzLDa1mGyCxw4cODAcZujjS/kw6e2CZi3EZMR12rshAMHDhw4Fhz58Cn/b97Uawv25oCHAwcOHDhuc2ziBZvW3izWlr95sQ4OHDhw4LjMkR+E8kdG458LB79oHRw4cODA8S0cNxpz+VAqHywdbg7iwIEDB46jHLOIQF4I28KchyFm748DBw4cOG5w7F+oPZLlw6rZWOtYoAEHDhw4cFw4s7SBhvpVFuV809bEgQMHDhy3OdpxURtl24+d2mNhUqRx4MCBA8dtjs022lK9GWK1T/xAjAMHDhw4HsmRF8i2KLZPzNuXOHDgwIHjCRzJJjeld/8l1c/CgQMHDhzXOGYBtWSdfVRuVm5x4MCBA8dPcWxaey1fG4NoQ3j514wDBw4cOG5wuHDgwIEDBw4cOHDgwPGw6y8x1egZ2TOnAAAAAABJRU5ErkJggg==">
+    
+</ul>
+
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-none-link" href="/tags/Android/" rel="tag">Android</a></li><li class="mdl-menu__item"><a class="post_tag-none-link" href="/tags/Google-Pixel/" rel="tag">Google Pixel</a></li><li class="mdl-menu__item"><a class="post_tag-none-link" href="/tags/Guide/" rel="tag">Guide</a></li><li class="mdl-menu__item"><a class="post_tag-none-link" href="/tags/Privacy/" rel="tag">Privacy</a>
+    </ul>
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=如何更好地使用 Android 手機（2022）&url=https://www.misaka-mc.tokyo/2022/07/20/a-better-way-to-use-an-android-phone-2022/index.html&via=Mika Savijärvi" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://www.misaka-mc.tokyo/2022/07/20/a-better-way-to-use-an-android-phone-2022/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+        <a class="post_share-link" href="https://telegram.me/share/url?url=https://www.misaka-mc.tokyo/2022/07/20/a-better-way-to-use-an-android-phone-2022/index.html&text=如何更好地使用 Android 手機（2022）" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Telegram
+            </li>
+        </a>
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <blockquote>
+<p>聲明：<br>本文為轉載文章，原作者 <a target="_blank" rel="noopener" href="https://radow.me/">Radow</a>。<br>本站在獲得原作者授權後轉載。<br>請注意：本文章採用與本站其他文章相不同的共享創意特許條款，詳細請留意腳註。</p>
+</blockquote>
+<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>現在是 2022 年，已經走過 13 個年頭的 Android，在各方面都有了長足的發展。經過審慎評估、採取了恰當的安全措施的 Android 手機可以達到乃至超越 iPhone 的安全性和隱私保護能力。然而，絕大多數的 Android 手機使用者並沒有安全、隱私意識，不知道如何讓自己的 Android 手機更安全、更保護隱私，或儘管對相關話題略有了解，卻並未採取最佳實踐。特別地，在中國大陸，安全與隱私的現狀尤為嚴重。筆者試圖在本文簡要介紹一些被普遍認可的策略和實踐，若讀者採取這些策略和實踐，則可能會提高 Android 手機的安全性，使其更好地保護個人隱私。</p>
+<p>本文適合所有有意於改善自己數字生活、強化安全與隱私性的中國大陸 Android 手機用户閲讀。如果讀者認為本文過於複雜，筆者推薦切換到 iOS 以獲取相對更好的安全與隱私保護。</p>
+<p>本文只是一份提綱，而非指引。筆者也不保證文中的內容均是正確的、適合任何一位讀者的。</p>
+<h2 id="威脅模型分析"><a href="#威脅模型分析" class="headerlink" title="威脅模型分析"></a>威脅模型分析</h2><p>智能手機是當今社會的重要節點，重要性無需多言。在中國大陸，智能手機被廣泛用作支付、交易終端和身份驗證終端，這意味着有大量敏感數據存儲於智能手機當中。同時，智能手機承載着記錄生活、網絡社交、娛樂等功能，在使用這些功能時，智能手機大多數時候作為客户端而存在，本地計算、存儲的加固需求不迫切，而保護互聯網服務的訪問憑證，使其對用户保持高可用性更加重要。同時，在此模型下，我們要求對使用的互聯網服務賦予高級別的信任。</p>
+<p>關於訪問憑證，考慮到中國大陸的互聯網服務普遍依賴 SMS 雙因素認證（事實上，它很多時候根本就是作為唯一的認證因素），需要對 SMS 接收進行加固，減少攻擊點位；但同時，應當儘可能考慮採用更安全的多因素認證模式。</p>
+<p>中國大陸的互聯網服務客户端應用程序通常會收集大量用户數據，對用户隱私安全構成直接威脅。在以往，Android 的權限管理機制有着諸多問題，且強制索取敏感權限的應用程序大量存在。如今，上述問題已經得到了很大程度的改善，但應用依然可以通過內置的各種追蹤框架和代碼跟蹤用户行為。考慮到中國大陸的互聯網服務對手機號碼這一高度身份關聯因子的強制追求，互聯網匿名性的優先級可以適當下調，安全措施的重點可以放在降低用户畫像的精確性、減少不必要的數據共享等方面。</p>
+<p>哪怕不是全部，也有絕大多數的中國大陸 Android 手機制造商對上游 Android 開源計劃（Android Open Source Project，AOSP）的代碼進行深度修改。其中涉及到的絕大多數代碼是專有、閉源的，且擁有系統底層的權限，其數據收集行為更有侵略性，可以説是「監守自盜」。應當假定這些加入專有、閉源代碼的操作系統是不安全的。</p>
+<h2 id="最佳實踐"><a href="#最佳實踐" class="headerlink" title="最佳實踐"></a>最佳實踐</h2><h3 id="購買決策"><a href="#購買決策" class="headerlink" title="購買決策"></a>購買決策</h3><p>為了避免出現「監守自盜」的問題，我們應當選用對安全、隱私、自由擁有良好支持的 Android 手機。這意味着手機的硬件性能不應被視作第一考量因素，而應當自軟件向硬件，選擇可以使用注重安全、隱私的操作系統的手機。</p>
+<h3 id="操作系統的選擇"><a href="#操作系統的選擇" class="headerlink" title="操作系統的選擇"></a>操作系統的選擇</h3><h4 id="預備知識：啓動時驗證（Verified-Boot）"><a href="#預備知識：啓動時驗證（Verified-Boot）" class="headerlink" title="預備知識：啓動時驗證（Verified Boot）"></a>預備知識：啓動時驗證（Verified Boot）</h4><p>啓動時驗證是 Android 4.4 引入的安全特性，它能確保硬件執行的所有二進制代碼均來自可信的來源。它可建立一條從受硬件保護的信任根到引導加載程序，再到 <code>boot</code> 分區和其他已驗證分區（包括 <code>system</code>、<code>vendor</code> 和可選的 <code>oem</code> 分區）的完整信任鏈。在設備啓動過程中，無論是在哪個階段，都會在進入下一個階段之前先驗證下一個階段的完整性和真實性。</p>
+<p>若假定各分區的執行代碼本身沒有安全問題，則具備啓動時驗證的 Android 手機可以確保啓動的一致性和安全性，有效抵禦惡意注入代碼。因此，對啓動時驗證的良好支持是必須考慮的因素。</p>
+<p>出於明顯的利益考量，大多數 Android OEM（Original equipment manufacturer，原始設備製造商）不會為第三方的操作系統提供簽名校驗，哪怕其自由、開源且經過獨立審計。因此，如將啓動時驗證作為必須，大多數時候用户只能選擇使用廠商提供的操作系統。Google、FairPhone 等是少數例外，且擁有廣泛的社區支持。筆者推薦選擇它們。</p>
+<p>筆者推薦使用以下操作系統：</p>
+<h4 id="GrapheneOS"><a href="#GrapheneOS" class="headerlink" title="GrapheneOS"></a>GrapheneOS</h4><p>GrapheneOS 是目前兼顧隱私保護與安全性的最佳選項。它基於 AOSP 上游加入了諸多改進，包括加強的應用運行時、應用沙箱、內存分配機制、系統內核、網絡安全、傳感器權限管理、數據加密等等。同樣關鍵的是，GrapheneOS 系統經過二進制文件簽名，因此支持啓動時驗證。這當然意味着用户可以再次上鎖 bootloader，而由於整個啓動流程經過安全性驗證，它能夠達到 Android 設備應有的安全性標準。</p>
+<p>GrapheneOS 團隊對安全性的要求極高。因此，目前只有 Google Pixel 系列手機受到 GrapheneOS 的支持，且對於 Google 不再維護的 Pixel 手機（如 Pixel 2），GrapheneOS 也不再繼續維護。</p>
+<h4 id="CalyxOS"><a href="#CalyxOS" class="headerlink" title="CalyxOS"></a>CalyxOS</h4><p>CalyxOS 基於 AOSP 上游加入了諸多改進，包括內置的防火牆 Datura、網絡安全性改進（如對 Tor 的良好支持和私有 DNS）、高級權限管理、內置各類隱私通信應用（如 Signal）等。與 GrapheneOS 一樣，CalyxOS 也支持啓動時驗證，達到了 Android 設備應有的安全性標準。</p>
+<p>CalyxOS 也僅支持 Google Pixel 系列手機。對於 Google 不再維護的 Pixel 手機，CalyxOS 會提供相比 GrapheneOS 稍長的維護時間，但最終也會放棄。</p>
+<p>一個例外是小米 Mi A2（小米 6X 參與 Android One 項目的特別版本），如果讀者恰好擁有 Mi A2，可以嚐鮮，但由於其已經很長時間不再得到硬件上游維護，其安全性無法得到保證。</p>
+<h4 id="DivestOS"><a href="#DivestOS" class="headerlink" title="DivestOS"></a>DivestOS</h4><p>DivestOS 是 LineageOS 的一個 fork，它目標支持的手機較 GrapheneOS 等要更多一些。其擁有一個經過安全性和隱私保護加強的網頁瀏覽器和 WebView，內置一個支持端到端加密的 SMS 應用、全局攔截廣告與追蹤器的 hosts 文件，還擁有一個自動內核 KVE 修補程序，能夠在第一時間修復已發現並公佈的 Linux 內核安全問題。同時，DivestOS 也引入了不少來自 GrapheneOS 和 CalyxOS 的安全增強措施。DivestOS 支持啓動時驗證，但實際支持情況依機型而異。</p>
+<p>DivestOS 目前主要維護的是接近或已經不再被製造商維護的手機。目前對啓動時驗證特性支持良好的有：一加 7 Pro/7T/7T Pro/6/6T/5/5T、Google Pixel 3/2/1、Essential Phone、FairPhone 4 等。DivestOS 的安全性整體而言不如 GrapheneOS 和 CalyxOS，但也不失為一個備選項。</p>
+<h4 id="LineageOS-和其他「第三方-ROM」"><a href="#LineageOS-和其他「第三方-ROM」" class="headerlink" title="LineageOS 和其他「第三方 ROM」"></a>LineageOS 和其他「第三方 ROM」</h4><p>它們大多不支持上鎖 bootloader，啓動時驗證也無從談起。使用它們也許提升了隱私，但需要在安全性上做出巨大的妥協，因此應當謹慎考慮——事實上，妥協安全來換取隱私，其結果有時是隱私與安全雙雙失去。同時，由於缺少來自硬件製造商上游的維護，部分系統有時連一些基本的體驗（如藍牙、VoLTE 等）的支持都會存在問題。</p>
+<p>如果讀者認為做出安全性妥協是可以接受的，則可以考慮 LineageOS。LineageOS 久負盛名，其官方分支對可用性的要求相對更高，因此是其中較好的選項。其他「第三方 ROM」當然有着較高的可玩性，但即使是對 Android 有着最深入瞭解的愛好者，也應當避免在其中存儲任何敏感信息。</p>
+<h3 id="保護隱私的一些-Android-特性"><a href="#保護隱私的一些-Android-特性" class="headerlink" title="保護隱私的一些 Android 特性"></a>保護隱私的一些 Android 特性</h3><p>讀者有必要對這些特性有基本認識。</p>
+<h4 id="多用户支持"><a href="#多用户支持" class="headerlink" title="多用户支持"></a>多用户支持</h4><p>Android 支持多用户的特性，這是在 Android 系統中實現應用程序隔離最安全、同時也最容易理解的機制。每一個用户的數據都各自加密，無法互相讀取；機主作為「管理員」，可以對用户的權限予以限制。不過，Android 無法使兩個用户同時運行程序，因此使用上有一定的不便之處。</p>
+<h4 id="工作資料"><a href="#工作資料" class="headerlink" title="工作資料"></a>工作資料</h4><p>這是一項為企業管理而設計的特性，允許在單個用户資料當中單獨創建一個「工作資料」區域，實現工作與個人事務的分離。企業的管理員可以對工作資料的行為予以管理，但無法讀取個人資料的內容。目前，使用這項功能需要一個設備控制器（device controller），不過 CalyxOS 提供了內置的設備控制器。</p>
+<p>如果沒有內置，筆者推薦使用 Island（煉妖壺，由 Oasis Feng 開發）、Insular（Island 的一個 fork）和 Shelter 來創建工作資料。這些應用程序均為開源程序，其安全性可以獨立驗證。請不要使用專有、閉源的應用程序創建工作資料，因為設備控制器擁有對工作資料內全部應用和數據的控制權，它們必須是可信的。</p>
+<p>Island、Insular 和 Shelter 的主要區別：</p>
+<ul>
+<li>Island 含有 Google Analytics 等專有代碼用於遙測（telemetry）獲取使用數據，並且聯網。Insular 和 Shelter 均不聯網。 </li>
+<li>Island 和 Insular 支持限制 adb 終端權限，防止外部侵入者通過 USB 讀寫數據；支持凍結個人資料中的應用；Shelter 不支持。</li>
+<li>Island 支持與同開發者的「綠色守護」（Greenify）聯動凍結應用程序；Shelter 自身支持類似的功能；Insular 不支持。</li>
+<li>Shelter 支持阻止對聯繫人（Contacts）的搜索，這可能會非常有用。Island 和 Insular 不支持。</li>
+</ul>
+<p>Google 正在為 Android 開發使用 Google Workspace 添加工作資料的能力，但很顯然，這需要使用者信賴 Google。</p>
+<p>請注意：單用户中的個人/工作資料對應用程序的隔離程度不如多用户的方案，存在一定的風險。讀者務必仔細評估自身的威脅模型，進而考慮是否採取更進一步的措施。</p>
+<h4 id="AppOpsManager（App-Ops）"><a href="#AppOpsManager（App-Ops）" class="headerlink" title="AppOpsManager（App-Ops）"></a><code>AppOpsManager</code>（App-Ops）</h4><p>於 Android 4.3 引入的權限管理機制 <code>AppOpsManager</code>，可用於權限訪問控制與跟蹤。儘管 Google 已於 Android 4.4.2 阻止了普通用户對其訪問修改，但這一機制仍然存在，且是 Android 權限管理中重要的一環。</p>
+<p>通過一些輔助手段，用户依然可以修改 <code>AppOps</code> 的行為。其中一種限制選項是<code>MODE_IGNORED</code>（忽略），可以讓系統為應用返回空數據。筆者強烈推薦對 <code>READ_CLIPBOARD</code> 和 <code>WRITE_CLIPBOARD</code> 予以限制，因為剪貼板常常包含隱私數據。</p>
+<h4 id="展望：Android-13"><a href="#展望：Android-13" class="headerlink" title="展望：Android 13"></a>展望：Android 13</h4><p>Android 13「提拉米蘇」在隱私方面做出了兩項重要改進，儘管中國大陸的 Android app 未必會在乎：</p>
+<ul>
+<li>照片選擇器（<code>ACTION_PICK_IMAGES</code>）：原生的、類似 iOS 提供的照片選擇器。分享照片與視頻時，將不再需要賦予應用過多權限。</li>
+<li>附近的 Wi-Fi 設備（<code>NEARBY_WIFI_DEVICES</code>）：通過此項權限的限制，若一個 Android 程序只需要連接到 Wi-Fi，它可不必對其他可被檢索的 Wi-Fi 接入點有了解。</li>
+</ul>
+<h3 id="應用商店"><a href="#應用商店" class="headerlink" title="應用商店"></a>應用商店</h3><p>在中國大陸，Google Play 並沒有佔據多少應用商店的市場份額。這一份額主要由 OEM 自己運營的應用商店，以及較知名的應用商店（如騰訊應用寶等）所佔據。這些應用商店均不是隱私友好的，筆者不推薦使用。筆者建議直接從可信的 Android app 託管網站獲取 .apk 文件。大多數中國大陸的互聯網服務客户端 app 均具備自我更新的能力，可直接使用之。</p>
+<h4 id="F-Droid"><a href="#F-Droid" class="headerlink" title="F-Droid"></a>F-Droid</h4><p>F-Droid 在 Android 社區當中普遍被認為是一個關注隱私、自由的應用倉庫平台。筆者也推薦在 F-Droid 獲取一些不錯的應用，但請注意：優先選用開發者自有的 F-Droid 分發倉庫。其他的倉庫在版本更新上可能不及預期。</p>
+<h4 id="Google-Play"><a href="#Google-Play" class="headerlink" title="Google Play"></a>Google Play</h4><p>Google 對隱私的侵害是顯而易見的。筆者不推薦在 Android 手機上使用完整、具備高權限的 Google Play 框架。GrapheneOS 擁有一個沙箱化的 Google Play 框架，筆者推薦使用；CalyxOS 則採用了 microG，它是自由、開源的 Google Play 替代品，但可能與一些 Google 應用不兼容，且 microG 方案的安全性低於 GrapheneOS 方案。</p>
+<p>筆者推薦從 ApkMirror 獲取 .apk 文件安裝，然後使用 GrapheneOS 的 Google Play Store 保持應用更新。作為替代，可以使用 Aurora Store，但請注意 Aurora Store 的「匿名」功能無法讓用户真正匿名。</p>
+<h3 id="廣告與追蹤器"><a href="#廣告與追蹤器" class="headerlink" title="廣告與追蹤器"></a>廣告與追蹤器</h3><p>筆者不推薦使用任何本地廣告與跟蹤器攔截程序。在理想的安全模型下，應當由可信任的 DNS 來完成這一任務。</p>
+<p>筆者推薦的具備廣告、追蹤器攔截能力的 DNS：</p>
+<ul>
+<li>NextDNS</li>
+<li>AdGuard DNS</li>
+</ul>
+<p>TrackerControl、AdAway、RethinkDNS 等正常工作需要藉助一個虛擬專用網連接，這可能會與用户使用的其他虛擬專用網相沖突，因為 Android 只允許同時連接一個。TrackerControl 的屏蔽顆粒度不足，會使得大量常用應用無法工作；AdAway 具有 root 工作模式，但大多數安全專家不推薦獲取 root 權限。</p>
+<p>如果使用 Firefox for Android（筆者暫時不推薦使用），可以通過 uBlock Origin 形成補充。</p>
+<h3 id="一些實用應用"><a href="#一些實用應用" class="headerlink" title="一些實用應用"></a>一些實用應用</h3><h4 id="筆記"><a href="#筆記" class="headerlink" title="筆記"></a>筆記</h4><p>筆記是人記錄思想的重要工具，應當被嚴肅對待。筆者不推薦任何要求聯網而不提供任何端到端加密可能的筆記 app。筆者推薦以下筆記 app：</p>
+<ul>
+<li>Standard Notes</li>
+<li>Joplin</li>
+<li>Notally</li>
+<li>Obsidian</li>
+</ul>
+<h4 id="密碼管理器，雙因素驗證器"><a href="#密碼管理器，雙因素驗證器" class="headerlink" title="密碼管理器，雙因素驗證器"></a>密碼管理器，雙因素驗證器</h4><p>通過密碼管理器，用户不僅減少了輸入密碼的繁瑣步驟，還可以方便地審視自己的網絡足跡。筆者推薦以下密碼管理器：</p>
+<ul>
+<li>KeePass 兼容的密碼管理器，如 KeePass DX、AuthPass</li>
+<li>Bitwarden</li>
+<li>1Password</li>
+</ul>
+<p>筆者推薦以下 TOTP 雙因素驗證器：</p>
+<ul>
+<li>Aegis</li>
+</ul>
+<p>請注意：使用密碼管理器存儲 TOTP 密鑰是非常錯誤的實踐，會顯著降低安全性。</p>
+<h4 id="瀏覽器與-WebView"><a href="#瀏覽器與-WebView" class="headerlink" title="瀏覽器與 WebView"></a>瀏覽器與 WebView</h4><p>選擇合適的網頁瀏覽器，對於隱私與安全十分重要。</p>
+<p>如果讀者使用 GrapheneOS，筆者推薦使用其自帶的瀏覽器 Vanadium。如果讀者並非使用 GrapheneOS，筆者推薦使用 Bromite。它們都具備非常高的默認隱私、安全保護能力。Bromite 還實驗性地支持部分 greasemonkey 腳本。</p>
+<p>保持 WebView 的更新非常重要。Android app 打開的網頁鏈接通常都會調用 WebView，若 WebView 版本過低（這在中國大陸銷售的智能手機中非常常見），則會為網頁惡意代碼提供可乘之機。GrapheneOS、CalyxOS、DivestOS 等均擁有加固且保持更新的 WebView。</p>
+<p><strong>儘量避免使用騰訊修改的 X5 內核瀏覽器及其 WebView。</strong></p>
+<h5 id="大量使用拓展與插件不是最佳實踐，又及-Firefox-for-Android-的問題"><a href="#大量使用拓展與插件不是最佳實踐，又及-Firefox-for-Android-的問題" class="headerlink" title="大量使用拓展與插件不是最佳實踐，又及 Firefox for Android 的問題"></a>大量使用拓展與插件不是最佳實踐，又及 Firefox for Android 的問題</h5><p>讀者可能會發現，筆者沒有推薦使用 Firefox。Firefox 的支持者通常會以 Firefox 由非營利的 Mozilla 開發、支持海量拓展與插件、採用獨立的 Gecko 內核等為推薦理由，但很遺憾的是，目前這些都不能使人足夠推薦 Firefox for Android。</p>
+<p>首先，將隱私保護寄託於大量地使用隱私保護拓展，幾乎就像是為了治病吃下大量不同種類的藥物。哪怕不考慮部分拓展本身就在侵犯隱私，大多數隱私保護拓展的設計也是缺乏明確的威脅建模，對隱私保護的意義有限。使用過多的拓展，反而會留下更多的「識別指紋」，使得跨網站的追蹤器更容易對用户進行畫像。</p>
+<p>讀者不應當考慮以下任意一個拓展，儘管讀者會發現它們大多被列入了 Mozilla 的「推薦拓展列表」：</p>
+<ul>
+<li>HTTPS Everywhere：主流瀏覽器均已支持僅 HTTPS 模式，而開發該拓展的 EFF 表示該拓展已於 2021 年底被放棄。</li>
+<li>Decentraleyes、LocalCDN：由於 Firefox 86 已經引入了完全 Cookie 保護（Total Cookie Protection），CDN 訪問請求所引入的 cookie 已經被有效隔離。網站執行的 JavaScript 檢測代碼能夠識別出用户使用了這類拓展，因此其實際上拓寬了攻擊位面。</li>
+<li>Privacy Badger：其保護效力同樣被完全 Cookie 保護所替代。Privacy Badger 此前採取本地學習的方式探測潛在的追蹤器，但其探測方式已經被證明是存在安全問題、極其容易被反偵測的，此後 Privacy Badger 改為默認採用一個固定的追蹤器列表，意義大減。</li>
+<li>uMartix：已經長期缺乏維護，不適合繼續使用，且其功效容易被替代。</li>
+<li>Cookie Auto Delete：完全 Cookie 保護令其毫無意義。事實上，這一拓展根本就與完全 Cookie 保護不兼容。</li>
+</ul>
+<p>大體上，安裝任何 WebExtension 拓展都可能會增加用户被建立識別指紋、乃至被攻擊的可能性。不過，仍然有少量拓展值得被推薦：</p>
+<ul>
+<li>uBlock Origin：Firefox 上最佳的內容屏蔽工具。</li>
+<li>Firefox 多賬户容器：可以被用於登錄多個網絡賬户。</li>
+<li>CanvasBlocker：可以降低被建立高識別度指紋的概率。一個替代做法（這一做法更加徹底）是啓用 Firefox 的實驗性功能：在 <code>about:config</code> 中打開 <code>privacy.resistFingerprinting</code>，不過這可能會使得部分網頁無法正確顯示。</li>
+</ul>
+<p>在桌面端，Firefox 是一個優秀的網頁瀏覽器。在 Android 平台，Firefox 採用了為 Android 平台特性而設計的 GeckoView 引擎。然而，採用這一引擎的 Firefox for Android 目前仍然沒有啓用 <code>android:isolatedProcess</code>（進程隔離）策略（Mozilla 開發成員表示這一特性將在今年晚些時候登場），也沒有實現站點間隔離。事實上，就連僅 HTTPS 模式這一基本的特性，都遲至 Fenix 版本 100 才得以全面實行。在這些問題解決之前，Firefox for Android 不能被視作一個足夠安全的網頁瀏覽器。</p>
+<p>近日，Mozilla 限制了中國大陸用户獲取 uBlock Origin 等廣告屏蔽拓展的能力。在桌面版 Firefox 上，可以通過旁加載（sideload）的方式安裝 uBlock Origin；但在 Firefox for Android 上，目前沒有解決方案。這進一步降低了 Firefox for Android 對中國大陸 Android 用户的吸引力。</p>
+<h4 id="RSS-閲讀器"><a href="#RSS-閲讀器" class="headerlink" title="RSS 閲讀器"></a>RSS 閲讀器</h4><p>筆者推薦以下 RSS 閲讀器客户端：</p>
+<ul>
+<li>Feeder</li>
+<li>Readrops</li>
+</ul>
+<p>筆者推薦以下 RSS 服務：</p>
+<ul>
+<li>Tiny Tiny RSS</li>
+<li>FreshRSS</li>
+</ul>
+<h4 id="其他值得推薦的實用應用"><a href="#其他值得推薦的實用應用" class="headerlink" title="其他值得推薦的實用應用"></a>其他值得推薦的實用應用</h4><ul>
+<li>Syncthing：同步</li>
+<li>Jitsi：視頻或語音會議</li>
+<li>Nextcloud：雲服務</li>
+<li>GadgetBridge：連接部分可穿戴設備</li>
+</ul>
+<h3 id="實用建議"><a href="#實用建議" class="headerlink" title="實用建議"></a>實用建議</h3><h4 id="Root"><a href="#Root" class="headerlink" title="Root"></a>Root</h4><p>大多數 Android 安全專家不推薦個人用户獲取 Android 手機的 root 權限。獲取 root 權限會從根本上破壞 Android 的安全機制。</p>
+<p>獲取 root 權限通常需要對 Android 啓動分區（<code>boot</code>）或恢復分區（<code>recovery</code>）進行改動，這破壞了系統文件的完整性，使得啓動時驗證無法實行。同時，root 權限的暴露可能會使得惡意代碼繞過 Android 自身的權限機制和 SELinux 策略，威脅用户安全。此時，隱私自然無從談起。整體而言，獲取 root 權限是一種增加攻擊表面的行為。</p>
+<p>機制比人更加可靠。</p>
+<p>獲取 root 權限當然能夠提供一些好處，比如你可以使用 AdAway 等工具攔截追蹤器和廣告，使用類似「存儲空間隔離」的應用，通過 Magisk/Zygisk 模塊來實現各類增強功能等。但它們提供的好處真的值得做出 root 這樣的安全性犧牲嗎？讀者當然可以有自己的判斷，但筆者認為這是不值得的。</p>
+<p>相比 AdAway，筆者更推薦使用私有 DNS（如 NextDNS、Adguard DNS）方案攔截追蹤器和廣告。詳情請看本文「廣告與追蹤器」部分。</p>
+<p>大多數 app 並不需要訪問存儲空間的權限也能正常使用。對於需要分享圖片的社交類應用，使用 Android 的「分享」功能也可以部分解決（一個例外是微信，可以嘗試 Open2Share）。如果一定要給那些沒有使用新的相冊讀取 API 的應用授予存儲空間管理權限，將其單獨放置在工作資料中即可。</p>
+<h5 id="如果確實需要-Root……"><a href="#如果確實需要-Root……" class="headerlink" title="如果確實需要 Root……"></a>如果確實需要 Root……</h5><p>在使用任何 Magisk/Zygisk/Ruri 模塊前，確保對其工作原理和技術細節有充分了解；考慮另行購買一部 iOS 用來存放任何敏感或涉及金融交易的應用程序；假定你的設備是不安全的，以此為基礎構建威脅模型。</p>
+<h5 id="SafetyNet"><a href="#SafetyNet" class="headerlink" title="SafetyNet"></a>SafetyNet</h5><p>通過啓動時驗證的設備可以通過基本的 SafetyNet，但可能無法通過高級的 SafetyNet。使用 Magisk/Zygisk 進行欺騙的做法是不安全的。筆者認為，追求高等級的 SafetyNet 不是最佳實踐，因為這意味着對專有的 DRM 與隱私侵入功能的支持。</p>
+<h4 id="媒體元數據，「打碼」"><a href="#媒體元數據，「打碼」" class="headerlink" title="媒體元數據，「打碼」"></a>媒體元數據，「打碼」</h4><p>清除媒體元數據有助於減少在社交網絡中的暴露。</p>
+<p>「打碼」可以遮擋部分敏感內容。請注意不要對文字「打碼」。這是不安全的做法，正確的做法是用純色、非透明的色塊填塗。</p>
+<h4 id="系統更新"><a href="#系統更新" class="headerlink" title="系統更新"></a>系統更新</h4><p>在中國大陸，部分 Android 設備製造商甚至不願意為其產品提供一年的系統更新。儘管有着多方面的因素作用，筆者仍強烈建議選擇至少提供 3 年 Android 版本更新，且能跟進 Android 安全補丁的製造商。儘管在低 API 下大多數程序也可以正常運行，但考慮到 Android 的隱私、安全管理仍在不斷進步，跟進最新版本會帶來大量好處。</p>
+<h4 id="「安全管家」"><a href="#「安全管家」" class="headerlink" title="「安全管家」"></a>「安全管家」</h4><p>「安全管家」無法真正帶來安全，這和殺毒軟件總殺不完毒的道理一致。窮舉黑名單是網絡安全中最不聰明的做法。</p>
+<h4 id="減少足跡"><a href="#減少足跡" class="headerlink" title="減少足跡"></a>減少足跡</h4><p>有一些觀點認為：「我已經暴露了很多隱私，再保護已經沒有用了」。這是錯誤的認識。既有的數據效力會逐漸下降，而如果心甘情願地持續提供數據，後果則會越來越嚴重。</p>
+<p>如果有可能，應當避免使用所有不必要的互聯網服務。「註銷帳號」比「卸載軟件」更加徹底，也富有表達力。</p>
+<h2 id="致謝"><a href="#致謝" class="headerlink" title="致謝"></a>致謝</h2><p>本文的觀點部分參考了 privacyguides.org 的相關內容，筆者對其致力於撰寫隱私安全指南的行動表示認同，並感謝他們的付出。</p>
+
+        
+                <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
+                    <p><strong>
+                        
+                            <a rel="license noopener" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This page is available under the <a rel="license noopener" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> License.
+                        </strong>
+                        <br>
+                        <strong>Link to this article: </strong><a href="https://www.misaka-mc.tokyo/2022/07/20/a-better-way-to-use-an-android-phone-2022/">https://www.misaka-mc.tokyo/2022/07/20/a-better-way-to-use-an-android-phone-2022/</a>
+                    </p>
+                </blockquote>
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 DISQUS -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'https://www.misaka-mc.tokyo/2022/07/20/a-better-way-to-use-an-android-phone-2022/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'https://www.misaka-mc.tokyo/2022/07/20/a-better-way-to-use-an-android-phone-2022/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+<script type="text/ls-javascript" id="disqus-thread-script">
+    queue.offer(function() {
+            (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document;
+                var s = d.createElement('script');
+                s.src = '//misaka-mc.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', + new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        });
+</script>
+
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2022/11/18/about-mastodon/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Newer
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2021/07/17/Wide-Screen-Baroque/" id="post_nav-older" class="next-content">
+            Older
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/bg.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.jpg" alt="Mika Savijärvi's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        Mika Savijärvi
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="mailto: MikaSavijarvi@proton.me" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                Home
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    Archives
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2022/11/">November 2022<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2022/07/">July 2022<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2021/07/">July 2021<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2021/03/">March 2021<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2021/02/">February 2021<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/12/">December 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/07/">July 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/05/">May 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/10/">October 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/07/">July 2019<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/06/">June 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/05/">May 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/04/">April 2019<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/03/">March 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/01/">January 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/12/">December 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/08/">August 2016<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/07/">July 2016<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                Categories
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                <a class="sidebar_archives-link" href="/categories/Digital-Life/">Digital Life<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/categories/Gadget/">Gadget<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/Idea/">Idea<span class="sidebar_archives-count">10</span></a></li><li><a class="sidebar_archives-link" href="/categories/Tech/">Tech<span class="sidebar_archives-count">5</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/about" title="About">
+                
+                    <i class="material-icons sidebar-material-icons">person</i>
+                
+                About
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/Virtual-Character" title="Virtual Character">
+                
+                    <i class="material-icons sidebar-material-icons">face</i>
+                
+                Virtual Character
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/timeline" title="Timeline">
+                
+                    <i class="material-icons sidebar-material-icons">history</i>
+                
+                Timeline
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/tags" title="Tags">
+                
+                    <i class="material-icons sidebar-material-icons">dashboard</i>
+                
+                Tags
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/links" title="Also see">
+                
+                    <i class="material-icons sidebar-material-icons">language</i>
+                
+                Also see
+            </a>
+        </li>
+        
+            <li class="divider"></li>
+        
+    
+
+    <!-- Article Number  -->
+    
+        <li>
+            <a href="/archives">
+                Number of articles
+                <span class="sidebar-badge">24</span>
+            </a>
+        </li>
+        
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+
+<!-- Theme Material -->
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+        <a href="https://twitter.com/MikaSavijarvi" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-twitter">
+                <span class="visuallyhidden">Twitter</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Facebook -->
+    
+
+    <!-- Google + -->
+    
+        <a href="https://www.youtube.com/channel/UCvfafvKLS6bHxWDJ24H6RcQ" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-gplus">
+                <span class="visuallyhidden">Google Plus</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/mika-savijarvi" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+        <a href="https://t.me/MSavijarvi" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-telegram">
+                <span class="visuallyhidden">Telegram</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- V2EX -->
+    
+
+    <!-- Segmentfault -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;<span year></span>&nbsp;Mika Savijärvi
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?wgjW/HuQG9JDgvPDPoRAng==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?LT4t6iE6m8TO1BLGGiNJqA==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+
+   <!-- 使用 DISQUS js 代码 -->
+<script id="dsq-count-scr" src="//misaka-mc.disqus.com/count.js" async></script>
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('
+<link rel="stylesheet" href="/css/uc.css">
+');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+
+    
+        <script>lsloader.load("hanabi","/js/hanabi-browser-bundle.js?5+2z7ZZmFuZK5IcimlZbxw==", true)</script>
+    
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+        
+        
+        HanabiBrowser.start('pre code',true);
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    var copyrightNow = new Date().getFullYear();
+    var textContent = document.querySelector('span[year]')
+
+    copyrightSince = 2016;
+    if (copyrightSince === copyrightNow||copyrightSince === 0000) {
+        textContent.textContent = copyrightNow
+    } else {
+        textContent.textContent = copyrightSince + ' - ' + copyrightNow
+    }
+
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.6 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>

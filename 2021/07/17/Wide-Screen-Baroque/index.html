@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html style="display: none;" lang="en">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        © Material Theme
+        https://github.com/viosey/hexo-theme-material
+        Version: 1.5.6 -->
+    <script>
+        window.materialVersion = "1.5.6"
+        // Delete localstorage with these tags
+        window.oldVersion = [
+            'codestartv1',
+            '1.3.4',
+            '1.4.0',
+            '1.4.0b1',
+            '1.5.0',
+            '1.5.2',
+            '1.5.5'
+        ]
+    </script>
+
+    <!-- dns prefetch -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+
+
+
+
+    <link rel="dns-prefetch" href="https://misaka-mc.disqus.com"/>
+
+
+
+
+
+    <link rel="dns-prefetch" href="../fonts"/>
+
+
+
+
+
+    <!-- Meta & Info -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <!-- Title -->
+    
+    <title>
+        
+            私たちはもう、舞台の上 | 
+        
+        Misaka Maintenance Centre
+    </title>
+
+    <!-- Favicons -->
+    <link rel="icon shortcut" type="image/ico" href="/img/bddvdjacket_shokaiUpRGBnoise_scaleLevel3x3.png">
+    <link rel="icon" href="/img/bddvdjacket_shokaiUpRGBnoise_scaleLevel3x3.png">
+
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="description" itemprop="description" content="">
+    <meta name="keywords" content=",anime,movie,Revue Starlight,Science Fiction,Wide-screen Baroque">
+    <meta name="theme-color" content="#413583">
+
+    <!-- Disable Fucking Bloody Baidu Tranformation -->
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <!--[if lte IE 9]>
+        <link rel="stylesheet" href="/css/ie-blocker.css">
+
+        
+            <script src="/js/ie-blocker.en.js"></script>
+        
+    <![endif]-->
+
+    <!-- Import lsloader -->
+    <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(a){try{localStorage.removeItem(a)}catch(b){}};lsloader.setLS=function(a,c){try{localStorage.setItem(a,c)}catch(b){}};lsloader.getLS=function(a){var c="";try{c=localStorage.getItem(a)}catch(b){c=""}return c};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var b=[];for(var a=0;a<localStorage.length;a++){b.push(localStorage.key(a))}b.forEach(function(e){var f=lsloader.getLS(e);if(window.oldVersion){var d=window.oldVersion.reduce(function(g,h){return g||f.indexOf("/*"+h+"*/")!==-1},false);if(d){lsloader.removeLS(e)}}})}catch(c){}};lsloader.clean();lsloader.load=function(f,a,b,d){if(typeof b==="boolean"){d=b;b=undefined}d=d||false;b=b||function(){};var e;e=this.getLS(f);if(e&&e.indexOf(versionString)===-1){this.removeLS(f);this.requestResource(f,a,b,d);return}if(e){var c=e.split(versionString)[0];if(c!=a){console.log("reload:"+a);this.removeLS(f);this.requestResource(f,a,b,d);return}e=e.split(versionString)[1];if(d){this.jsRunSequence.push({name:f,code:e});this.runjs(a,f,e)}else{document.getElementById(f).appendChild(document.createTextNode(e));b()}}else{this.requestResource(f,a,b,d)}};lsloader.requestResource=function(b,e,a,c){var d=this;if(c){this.iojs(e,b,function(h,f,g){d.setLS(f,h+versionString+g);d.runjs(h,f,g)})}else{this.iocss(e,b,function(f){document.getElementById(b).appendChild(document.createTextNode(f));d.setLS(b,e+versionString+f)},a)}};lsloader.iojs=function(d,b,g){var a=this;a.jsRunSequence.push({name:b,code:""});try{var f=new XMLHttpRequest();f.open("get",d,true);f.onreadystatechange=function(){if(f.readyState==4){if((f.status>=200&&f.status<300)||f.status==304){if(f.response!=""){g(d,b,f.response);return}}a.jsfallback(d,b)}};f.send(null)}catch(c){a.jsfallback(d,b)}};lsloader.iocss=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.iofonts=function(f,c,h,a){var b=this;try{var g=new XMLHttpRequest();g.open("get",f,true);g.onreadystatechange=function(){if(g.readyState==4){if((g.status>=200&&g.status<300)||g.status==304){if(g.response!=""){h(g.response);a();return}}b.cssfallback(f,c,a)}};g.send(null)}catch(d){b.cssfallback(f,c,a)}};lsloader.runjs=function(f,c,e){if(!!c&&!!e){for(var b in this.jsRunSequence){if(this.jsRunSequence[b].name==c){this.jsRunSequence[b].code=e}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var a=document.createElement("script");a.appendChild(document.createTextNode(this.jsRunSequence[0].code));a.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(a);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else{if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var d=this;var a=document.createElement("script");a.src=this.jsRunSequence[0].path;a.type="text/javascript";this.jsRunSequence[0].status="loading";a.onload=function(){d.jsRunSequence.shift();if(d.jsRunSequence.length>0){d.runjs()}};document.body.appendChild(a)}}};lsloader.tagLoad=function(b,a){this.jsRunSequence.push({name:a,code:"",path:b,status:"failed"});this.runjs()};lsloader.jsfallback=function(c,b){if(!!this.jsnamemap[b]){return}else{this.jsnamemap[b]=b}for(var a in this.jsRunSequence){if(this.jsRunSequence[a].name==b){this.jsRunSequence[a].code="";this.jsRunSequence[a].status="failed";this.jsRunSequence[a].path=c}}this.runjs()};lsloader.cssfallback=function(e,c,b){if(!!this.cssnamemap[c]){return}else{this.cssnamemap[c]=1}var d=document.createElement("link");d.type="text/css";d.href=e;d.rel="stylesheet";d.onload=d.onerror=b;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(d,a)};lsloader.runInlineScript=function(c,b){var a=document.getElementById(b).innerText;this.jsRunSequence.push({name:c,code:a});this.runjs()}})();</script>
+
+    <!-- Import queue -->
+    <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
+
+    <!-- Import CSS -->
+    
+        <style id="material_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_css","/css/material.min.css?Z7a72R1E4SxzBKR/WGctOA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+        <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?uVzgA6RLrOm13Ukw8Qgy+A==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+        
+
+    
+
+    
+
+    <!-- Config CSS -->
+
+<!-- Other Styles -->
+<style>
+  body, html {
+    font-family: Roboto, "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    overflow-x: hidden !important;
+  }
+  
+  code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  a {
+    color: #0B0858;
+  }
+
+  .mdl-card__media,
+  #search-label,
+  #search-form-label:after,
+  #scheme-Paradox .hot_tags-count,
+  #scheme-Paradox .sidebar_archives-count,
+  #scheme-Paradox .sidebar-colored .sidebar-header,
+  #scheme-Paradox .sidebar-colored .sidebar-badge{
+    background-color: #413583 !important;
+  }
+
+  /* Sidebar User Drop Down Menu Text Color */
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:hover,
+  #scheme-Paradox .sidebar-colored .sidebar-nav>.dropdown>.dropdown-menu>li>a:focus {
+    color: #413583 !important;
+  }
+
+  #post_entry-right-info,
+  .sidebar-colored .sidebar-nav li:hover > a,
+  .sidebar-colored .sidebar-nav li:hover > a i,
+  .sidebar-colored .sidebar-nav li > a:hover,
+  .sidebar-colored .sidebar-nav li > a:hover i,
+  .sidebar-colored .sidebar-nav li > a:focus i,
+  .sidebar-colored .sidebar-nav > .open > a,
+  .sidebar-colored .sidebar-nav > .open > a:hover,
+  .sidebar-colored .sidebar-nav > .open > a:focus,
+  #ds-reset #ds-ctx .ds-ctx-entry .ds-ctx-head a {
+    color: #413583 !important;
+  }
+
+  .toTop {
+    background: #B3B3B3 !important;
+  }
+
+  .material-layout .material-post>.material-nav,
+  .material-layout .material-index>.material-nav,
+  .material-nav a {
+    color: #B3B3B3;
+  }
+
+  #scheme-Paradox .MD-burger-layer {
+    background-color: #B3B3B3;
+  }
+
+  #scheme-Paradox #post-toc-trigger-btn {
+    color: #B3B3B3;
+  }
+
+  .post-toc a:hover {
+    color: #0B0858;
+    text-decoration: underline;
+  }
+
+</style>
+
+
+<!-- Theme Background Related-->
+
+    <style>
+      body{
+        background-image: url(/img/07.jpg);
+      }
+    </style>
+
+
+
+
+<!-- Fade Effect -->
+
+    <style>
+      .fade {
+        transition: all 800ms linear;
+        -webkit-transform: translate3d(0,0,0);
+        -moz-transform: translate3d(0,0,0);
+        -ms-transform: translate3d(0,0,0);
+        -o-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        opacity: 1;
+      }
+
+      .fade.out{
+        opacity: 0;
+      }
+    </style>
+
+
+<!-- Import Font -->
+<!-- Import Roboto -->
+
+    <link href="../fonts/css?family=Roboto:300,400,500" rel="stylesheet">
+
+
+<!-- Import Material Icons -->
+
+
+    <style id="material_icons"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("material_icons","/css/material-icons.css?pqhB/Rd/ab0H2+kZp0RDmw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+
+
+
+
+    <!-- Import jQuery -->
+    
+        <script>lsloader.load("jq_js","/js/jquery.min.js?ezyEvm8ST5CGfpA+kFFi1g==", true)</script>
+    
+
+    <!-- WebAPP Icons -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Misaka Maintenance Centre">
+    <meta name="msapplication-starturl" content="https://www.misaka-mc.tokyo/2021/07/17/Wide-Screen-Baroque/">
+    <meta name="msapplication-navbutton-color" content="#413583">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Misaka Maintenance Centre">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon" href="/img/bddvdjacket_shokaiUpRGBnoise_scaleLevel3x3.png">
+
+    <!-- Site Verification -->
+    
+    
+
+    <!-- RSS -->
+    
+
+    <!-- The Open Graph protocol -->
+    <meta property="og:url" content="https://www.misaka-mc.tokyo/2021/07/17/Wide-Screen-Baroque/">
+    <meta property="og:type" content="blog">
+    <meta property="og:title" content="私たちはもう、舞台の上 | Misaka Maintenance Centre">
+    <meta property="og:image" content="/img/bddvdjacket_shokaiUpRGBnoise_scaleLevel3x3.png">
+    <meta property="og:description" content="">
+    <meta property="og:article:tag" content="anime"> <meta property="og:article:tag" content="movie"> <meta property="og:article:tag" content="Revue Starlight"> <meta property="og:article:tag" content="Science Fiction"> <meta property="og:article:tag" content="Wide-screen Baroque"> 
+
+    
+        <meta property="article:published_time" content="Sat Jul 17 2021 23:13:09 GMT+0900">
+        <meta property="article:modified_time" content="Wed Jul 20 2022 10:59:10 GMT+0900">
+    
+
+    <!-- The Twitter Card protocol -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Add canonical link for SEO -->
+    
+        <link rel="canonical" href="https://www.misaka-mc.tokyo/2021/07/17/Wide-Screen-Baroque/index.html" />
+    
+
+    <!-- Structured-data for SEO -->
+    
+        
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://www.misaka-mc.tokyo/2021/07/17/Wide-Screen-Baroque/index.html",
+    "headline": "私たちはもう、舞台の上",
+    "datePublished": "Sat Jul 17 2021 23:13:09 GMT+0900",
+    "dateModified": "Wed Jul 20 2022 10:59:10 GMT+0900",
+    "author": {
+        "@type": "Person",
+        "name": "Mika Savijärvi",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.jpg"
+        },
+        "description": "御坂的生命維持與機械保養機構"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "Misaka Maintenance Centre",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/bddvdjacket_shokaiUpRGBnoise_scaleLevel3x3.png"
+        }
+    },
+    "keywords": ",anime,movie,Revue Starlight,Science Fiction,Wide-screen Baroque",
+    "description": "",
+}
+</script>
+
+
+    
+
+    <!-- Analytics -->
+    
+    
+    
+
+    <!-- Custom Head -->
+    
+
+<meta name="generator" content="Hexo 5.4.2"></head>
+
+
+    
+        <body id="scheme-Paradox" class="lazy">
+            <div class="material-layout  mdl-js-layout has-drawer is-upgraded">
+                
+
+                <!-- Main Container -->
+                <main class="material-layout__content" id="main">
+
+                    <!-- Top Anchor -->
+                    <div id="top"></div>
+
+                    
+                        <!-- Hamburger Button -->
+                        <button class="MD-burger-icon sidebar-toggle">
+                            <span id="MD-burger-id" class="MD-burger-layer"></span>
+                        </button>
+                    
+
+                    <!-- Post TOC -->
+
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#%E3%81%8A%E3%81%BE%E3%81%91"><span class="post-toc-text">おまけ</span></a></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 50 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
+        
+    
+            <p class="article-headline-p">
+                私たちはもう、舞台の上
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.jpg" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Mika Savijärvi</strong>
+        <span>Jul 17, 2021</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+        <button id="article-functions-qrcode-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">devices other</i>
+    <span class="visuallyhidden">devices other</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-qrcode-button">
+    <li class="mdl-menu__item">Read this article on other devices</li>
+    
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPYAAAD2CAAAAADAeSUUAAAC4ElEQVR42u3aQXLbMBAEQP7/0841VYmkGaxk00Dj5BJtEQ0ftnYW19eR68LGxsbGxsbGxsa+JfuK13++6MHnj57+/cnzpy8AS3vGxsbG3pudvCbf0L+be/RJfljPjyz6HmxsbOwD2I8KQI5JCt7k99f2jI2NjY2dF4+rXMkekpYGGxsbG3tSMCabzpuNG9VtbGxs7Buz51HRpFAlhfDHsjRsbGzs27MnW/+pn791vo2NjY19Y3a7Jldt2iFB+80v3ouNjY29KTsvDAnj+XaTKGrSqLzYJzY2Nvam7EcvXuM9x7TRVRtsvTh0bGxs7E3ZE0w7yk0Ouh0/JAUSGxsbe292vt1260kw9K7rQfWgFxsbG/sA9vwiTt7qXB9b2NjY2Oewk2i+PYK8dVkrlskhYmNjY5/AztuAHLY2rG3BbYuCjY2NfTK7LUVti5JHTmsDBmxsbOwT2G2xmYx48wFwW1BfHBM2Njb2Aew86Glf314MSg6oHS1jY2Nj781+V/GYxEZrA4YixsLGxsY+hp0UjDzcaS/o5MPdvPRiY2Njn8BuI/h3Xfdp/wFtEcXGxsY+k/2G+GYpPGov7uSREzY2Nvbe7Dy4yZuT9kCTUjcph9jY2NjnsNfKTB3ulEXoClYUcmFjY2Nvyl4b4iaDgSQ2ykkfGfRiY2Njb8eevGDewMyHvm/I0rCxsbF/Lbsd034trXyU2zYhUYuCjY2NfQw7iYTyg0iezi/rLIZK2NjY2AewJ8Umb2zaYXMbSGFjY2PvzZ63E/mANm82koLURlfY2NjYu7LXikE+6G0v9Lw3hMLGxsY+h70W67dF7hMHlFwPwsbGxj6H3TYPeRjUDg/WwqOPzLexsbGxt2bXL146rHwY/E0FDBsbG3sL9uRaT9LMrLVAoys72NjY2Fuw24YhYecD4MmoeFTAsLGxsbdgt8FN/rdrY4DiIs7a5UtsbGzsjdjnLGxsbGxsbGxsbOzbrD9HooXI+svQaAAAAABJRU5ErkJggg==">
+    
+</ul>
+
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-none-link" href="/tags/Revue-Starlight/" rel="tag">Revue Starlight</a></li><li class="mdl-menu__item"><a class="post_tag-none-link" href="/tags/Science-Fiction/" rel="tag">Science Fiction</a></li><li class="mdl-menu__item"><a class="post_tag-none-link" href="/tags/Wide-screen-Baroque/" rel="tag">Wide-screen Baroque</a></li><li class="mdl-menu__item"><a class="post_tag-none-link" href="/tags/anime/" rel="tag">anime</a></li><li class="mdl-menu__item"><a class="post_tag-none-link" href="/tags/movie/" rel="tag">movie</a>
+    </ul>
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=私たちはもう、舞台の上&url=https://www.misaka-mc.tokyo/2021/07/17/Wide-Screen-Baroque/index.html&via=Mika Savijärvi" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://www.misaka-mc.tokyo/2021/07/17/Wide-Screen-Baroque/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+        <a class="post_share-link" href="https://telegram.me/share/url?url=https://www.misaka-mc.tokyo/2021/07/17/Wide-Screen-Baroque/index.html&text=私たちはもう、舞台の上" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Telegram
+            </li>
+        </a>
+    
+</ul>
+
+    
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <blockquote>
+<p>『劇場版少女☆歌劇レヴュースタァライト』絶賛公開中。</p>
+</blockquote>
+<p><img src="https://misaka-mc.tokyo/images/Wide-Screen-Baroque/v2-208578b0997af957445aa70c323d896c_1440w.jpg" alt="ワイルドスクリーンバロック"></p>
+<p>與 TV 版的線索「オーディション（Autidion）」相對應，貫穿整個劇場版的線索是「ワイルドスクリーンバロック」。説實話一開始我是完全沒有理解其含義的。不過好在，在倫敦地下鐵的場景中展示了其英文表記，「Wi(l)d-screen Baroque」。這實際上是捏它自一種科幻作品的流派——「Wide-screen Baroque（ワイドスクリーンバロック）」。Screen 在這裏指的是科幻作品中故事所發生的背景——在日語中也被稱作「舞台」。這也許並不是一個巧合。而 Wide 則是指時間或空間的尺度。也就是説，這類作品中的故事通常跨越很長的時間維度，或以太空等宏大的舞台作為背景。</p>
+<hr>
+<p>Wide-screen Baroque 這一概念最早於 1964 年被提出。當時，英國 SF 小説家、SF 批評家 B.W. Aldiss 評價美國作家 C.L. Harness 的著書《The Paradox man》時，在序言中首次使用了這一詞語。Aldiss 最初如此描述的 Wide-screen Baroque。</p>
+<blockquote>
+<p>如此純粹的 SF，也許可以獨自成為一個流派——Wide-screen Baroque 。所有的情節都是精心設計的，並且大多無法被預測。登場人物的名字都很短，他們的壽命通常也很短。他們能夠輕而易舉地做出常人不可能做出的事情。就像字典中定義的「巴洛克」一樣。也就是説，這類作品並非其文風體裁多麼優秀，正相反，它們更加大膽，更加活潑，甚至有的時候令人感到過火。它們喜歡大場面，目標是星辰大海，甚至將時空旅行看作理所應當。作為故事發生的舞台，它們至少用到了整個太陽系。</p>
+</blockquote>
+<p>此後，Aldiss 在自己的作品《Trillion Year Spree: The History of Science Fiction》中再次提到《The Paradox man》。</p>
+<blockquote>
+<p>我個人而言的喜好，就是 Harness 的《The Paradox man》。這部作品可以看作此書（指《Trillion Year Spree》，譯者註）的高潮。它肆意地玩弄時間於空間，就像發狂的黃蜂一樣嗡嗡直叫。它機智、深刻，同時又浮誇，是無數人想要模仿卻又無法模仿的作品。這本書在英國發行時我為它撰寫了序言。我將它分類作 Wide-screen Baroque。E. E. Smith 和 A.E. van Vogt，以及 Alfred Bester 的作品也可算作這個分類。</p>
+</blockquote>
+<p>以 Aldiss 列舉的這些作家來看，Wide-screen Baroque 指的也許單純的只是一種 Space Opera —— 一種以宇宙冒險或宇宙戰爭為舞台的，注重故事性和演出效果而忽視邏輯設定的作品分類。</p>
+<p>實際上，Jerome Winter 博士在《Wide-Screen Baroque Revisited》一文中亦如此寫到</p>
+<blockquote>
+<p>B. Aldiss 在《Trillion Year Spree》中論述 E. E. Smith 和 A.E. van Vogt 對 SF 業界的影響時，自創了「Wide-screen Baroque」一詞。Aldiss 的這句話實際上與當代 Space Opera 的概念十分接近——也就是説，這實際上是在 New-Wave 的影響下 Aldiss 對 Space Opera 的重新命名。在某種程度上，Aldiss 也許在試圖挽救 Space Opera 的風評。Wilson ‘Bob’ Tucker 在 1941 年時曾評價 Space Opera 為「嘈雜、惡臭、落後於時代的飛船童話」</p>
+<p>——<a target="_blank" rel="noopener" href="https://www.uwp.co.uk/wide-screen-baroque-revisited/">Wide-Screen Baroque Revisited | UWP</a></p>
+</blockquote>
+<p>這裏有一個非常重要的概念，暨 New-Wave。</p>
+<p>在 SF 領域，New-Wave 指的是 1960~1970 年代，以 SF 作家、批評家為中心的，在 SF 作品中添加文學性要素以及實驗性要素的風潮。實際上，雖然《The Paradox man》出版於 1953 年，但正如前文所提，Aldiss 為其題序是在 1964 年再版的時候。彼時，New-Wave 的主導者中，以 Aldiss 為中心的一些作家在回顧過去出版的作品時發現「即便是被認為落後於時代的 Space Opera 中也有如此出色的作品」。故創造出「Wide-screen Baroque」這一概念以宣傳《The Paradox man》。</p>
+<hr>
+<p>但作為 Space Opera 的 Wide-screen Baroque，在《少女歌劇》中是顯然不成立的。</p>
+<p>這是因為，Wide-screen Baroque 這一概念在傳入日本之後發生了轉變。</p>
+<p>Chris Boyce 的作品《Catchworld》在日本出版時，翻譯家安田均這樣描述</p>
+<blockquote>
+<p>所有的登場角色雖然都有被賦予他們獨自的性格，但全書基本沒有直接的性格描寫，他們就像作者筆下的棋子一樣。並且，在第二章開頭，對未來的日本的描述中確有一種怪誕的異國情調（作者實際上非常瞭解日本，只是故意加以扭曲），以及全書其他很多地方都能夠看到這種影子。説到這裏，相信讀者已經注意到這本書屬於哪種 SF 類型了。<br>是的，這就是 Wide-screen Baroque。</p>
+</blockquote>
+<p>《Catchworld》一書的譯本於 1981 年在日本出版，而此前提到的《Trillion Year Spree》一書則是 1980 年才在日本出版。也就是説，實際上這是 Wide-screen Baroque 一詞剛剛進入日本時的事情。</p>
+<p>同時，安田均在介紹作者 Chris Boyce 的時候還做了如下表述。</p>
+<blockquote>
+<p>正因為這本書的出版，Boyce 在英國才正式的作為觀念派的一員而被接納。Barrington J. Bayley、Ian Watson 等在 70 年代開始展露頭角的作家們也都屬於這一流派。他們的作品的特徵是，他們尤其注重作品的觀念（Idea），書中接連湧現出的觀念，有時甚至是未經整理的觀念，能夠達到一種障眼法的效果。即便是在與 Michael G. Coney、Richard Cowper、Christopher Priest 等注重小説的體裁的作家相對立的立場下，正是他們為當今英國 SF 小説界帶來一絲活力。</p>
+</blockquote>
+<p>與 Aldiss 原本強調的「機智、深刻與浮誇的結合」、「情節設計的精妙」以及「舞台的規模」不同，安田在這裏側重的是「令人目眩的大量觀念」。</p>
+<p>同時，文中提到的 Ian Watson 與 Christopher Priest 曾於 1970 年代後半掀起過一次大規模的 SF 作家爭論（起因有爭議，一説為 1976 年 I. Watson 和 C. Priest 共著的 <a target="_blank" rel="noopener" href="https://www.isfdb.org/cgi-bin/title.cgi%3F1518351">Science Fiction: Form versus Content</a> 一文）。</p>
+<p>在種種機緣巧合下，本應與 Wide-screen Baroque 無關的 Watson 與 Priest 的爭論，在日本變得二者常同時出現。長久以來，Wide-screen Baroque 與其誕生的契機 New-Wave 運動反而分離開來。Wide-Screen Baroque 在日本 SF 界，定形為了大量觀念的連續出現。</p>
+<p>在這種語境下的 Wide-screen Baroque，其代表作家則是英國 SF 作家 Barrington J. Bayley。</p>
+<p>1983 年 B.J. Bayley 的作品《The Garments of Caean》在日本發行時，SF 批評家、翻譯家大野万紀如此評價。</p>
+<blockquote>
+<p>雖然出現了大量的專業術語以及看似正確的科學理論，但它與正統 SF 不同，如果仔細閲讀的話會發現其充滿矛盾。但是，當你初次閲讀下來的時候完全不會注意到這些矛盾點。無論是廢話還是假話，都講的非常巧妙，在故事中讀者會認為那是理所當然的事情。<br>這種類型的 SF 被稱作 Wide-screen Baroque。</p>
+</blockquote>
+<p>這種日本獨特的對 Wide-screen Baroque 的解讀，在日本 SF 界產生了其特有的影響。受到影響的其中一位，劇作家、腳本家中島かずき在新翻譯版的《The Garments of Caean》中這樣説到</p>
+<blockquote>
+<p>之前一直想要去做但一直不知道該怎麼做的事情，在我遇到 Wide-screen Baroque 之後逐漸明瞭了起來，我想要做的就是這種東西。以核心觀念為軸，把其他附帶的觀念隨意加上去當作障眼法，本質上其實是個荒誕的故事。舞台也許並不需要到宇宙那種層面，以我自己的風格來創作 Wide-screen Baroque。嚴格來講也許和 SF 中的 Wide-screen Baroque 不同，就將其當作是一種作劇術來使用吧。</p>
+</blockquote>
+<p>如果您對日本動畫比較瞭解的話，或許您已經知道接下來發生的事情了。中島かずき參與的兩個比較有名的作品，分別是《天元突破グレンラガン》和《キルラキル》。尤其是後者，中島かずき擔當原作，他本人更是直接説到</p>
+<blockquote>
+<p>當最終決定要做一個「女子高中生穿着有特殊能力的制服戰鬥」的動畫時我便已經明白，這已經離不開《The Garments of Caean》了。</p>
+</blockquote>
+<hr>
+<p>這時再來重新思考《少女歌劇》，它是否屬於 Wide-screen Baroque？以 Bayley 為代表的，提倡「大量觀念」的日本特有的理解的話，和《少女歌劇》也許相符合——尤其是中島かずき所提到的作為作劇術的 Wide-screen Baroque。</p>
+<p>並且同時，《劇場版 少女歌劇 Revue Starlight》實際上與 Wide-screen Baroque 的母體，New-Wave 運動的精神有所共鳴。New-Wave 運動的提倡者之一 J.G. Ballard 曾在文章中提問——「通向內宇宙的道路又在何方？」。他認為，應當追求的並非外在的宇宙，而是內在宇宙。這與少女歌劇系列中將登場人物的精神世界具象化作為舞台使用的觀念不合而同。</p>
+<p>然而，我們一直迴避了一個問題。劇中為何要將 Wide 寫作 Wild？在文章的冒頭處便已説過，Wild-screen Baroque 與 TV 系列中的 Audition 是相對應的。對比二者，很容易便能發現他們的不同——Audition 是在校內固定地方進行的，而 Wild-screen Baroque 則沒有固定位置。最為明顯的是第一幕「皆殺しのレヴュー」，少女們在電車中，而長頸鹿所在的地點則是銀座的十字路口。結合 Wild 一詞本來的意思，也許是想要強調舞台在校園外這一背景。</p>
+<p>另一方面，Wild 指的也可能是舞台本身的形態，暨舞台正在突破「第四面牆」，向觀眾席擴張。當然這裏的觀眾並非作為觀眾的我們。而是舞台少女們隨時可能成為演員，亦隨時可能從演員變為觀眾。</p>
+<p>實際上，在第一幕中大場なな的台詞或許也在暗示這一點</p>
+<blockquote>
+<p>これはオーディションに非ず<br>（這不是 Audition）<br>オーディションじゃないって言ってるでしょ<br>（我不是已經説了這不是 Audition）<br>まるで強いお酒を飲んだみたい<br>（彷彿喝了烈酒一樣）</p>
+</blockquote>
+<p>這一幕並非發生在學園中，甚至可以説，這一幕甚至並非發生在舞台上。大家僅僅是坐在電車中，電車便突然變形成為移動的舞台，將少女們強行拖入戰鬥。是舞台，又不是舞台。或者説，學園外的任何地方都可能成為舞台。這也與電影的主題相呼應——</p>
+<p>「私たちはもう、舞台の上（我們已立於舞台）」</p>
+<hr>
+<p>此外，全劇還有另一個非常重要的線索，是一連串的疑問——</p>
+<blockquote>
+<p>列車は必ず次の駅へ<br>では舞台は？<br>あなたたちは？</p>
+</blockquote>
+<p>列車總是駛向下一站。</p>
+<p>那麼舞台呢？</p>
+<p>你們呢？</p>
+<p>這一問句第一次出現是在「皆殺しのレヴュー」之前，包括愛城華恋在內的所有人都在電車上準備前往新國立第一歌劇團觀摹的時候。</p>
+<p>説一句題外話，電車本身在電影中也是一個很重要的符號之一。並且大多採用了東京地下鐵丸之內線的車廂。這一選擇似乎與本作監督古川知宏有關。而古川知宏則是幾原邦彥的直系弟子。在幾原邦彥的作品中亦有一部與電車，並且是以丸之內線為主要符號的作品——《迴轉企鵝罐》。如果仔細比較二者的話，《迴轉企鵝罐》中的另一個符號「蘋果」似乎在《劇場版少女歌劇》中也能找到相對應的「番茄」。至於番茄的含義後文會做展開。</p>
+<p>回到正題，「皆殺しのレヴュー」開始之前所有人都在電車當中，但「皆殺しのレヴュー」中愛城華恋卻並沒有登場。</p>
+<p>這裏的原因可以有多種解讀，我個人更加傾向於是因為除了華恋（以及ひかり和ばなな）以外的眾人均已明確了自己的目標，暨已經擁有了「下一個舞台」。</p>
+<p>這一場戰鬥的結果似乎也在説明着這件事情——除了真矢和クロ以外的五人甚至連僅使用一把武士刀的ばなな都難以招架，二刀流以後更是只有真矢一人存活到了最後。並且，只有真矢一人對ばなな（長頸鹿）的疑問給出了回答——</p>
+<blockquote>
+<p>「列車は必ず次の駅へ、では舞台は？」<br>「私はもう舞台の上」</p>
+</blockquote>
+<hr>
+<p>從時間線上來説，Wi(l)d-screen Baroque 是緊接着「皆殺しのレヴュー」開始的。</p>
+<p>Wi(l)d-screen Baroque 開幕後的第一個畫面就是電車載着七名舞台少女和她們自己的屍體在前進。儘管學校的地下有巨大的舞台，還有長頸鹿這件事本身就已經足夠怪誕。但看到一個角色和她自己的屍體同時出現在畫面中依舊讓我產生一種奇異的感覺——這也許是唯有動畫片才能夠展現的效果。</p>
+<p>在電影放映的順序中這一幕與「皆殺しのレヴュー」中間穿插了一段華恋兒童時期的回憶。但在進入回憶之前，也就是「皆殺しのレヴュー」的最後，ばなな非常唐突的説了這樣一段台詞</p>
+<blockquote>
+<p>なんだか強いお酒を飲んだみたい<br>なんだか強いお酒を飲んだみたい<br>だからぁ、なんだか強いお酒を飲んだみたいって</p>
+<p>私たち、もう死んでるよ</p>
+</blockquote>
+<p>當時在場的六人，沒有一人能夠跟上ばなな的思路。不過隨着情節的發展，電影中有給出似乎是這段台詞的解釋。</p>
+<p>無法生活在自己的人生中，彷彿觀眾一樣將自己至於自己的人生之外，那即使是活着也與死沒有什麼兩樣。</p>
+<p>也就是説，這正是「舞台少女之死」。</p>
+<p>在電影開頭的部分有過大家向老師匯報自己將來的打算的劇情。但是，那真的是她們真正渴望的未來嗎？</p>
+<p>比如，星見純那填寫的第一志願是知名大學（早稲田大学）的文學科，希望能夠以客觀的角度對所謂舞台有更深的理解。但在之後的情節中，卻又説到</p>
+<blockquote>
+<p>現在肯定是比不上天堂真矢她們的，但那也只是現在。總有一天……</p>
+</blockquote>
+<p>然而，一邊是希望進入日本頂級劇團，登上無數舞台的天堂真矢，一邊是在大學接受課堂學習的星見純那。她真的有可能以演員的身分追上天堂真矢嗎？</p>
+<p>其實最能夠理解這件事的也許是星見純那本人。</p>
+<p>這也許可以算作是一種自我欺騙。</p>
+<p>而 Wi(l)d-screen Baroque 則是對自我欺騙進行清算的場所。正如片中反覆出現的，銀色的 Position Zero 實際上存在無數個。而舞台少女們要做的就是，去找出哪一個才是屬於自己的 Position Zero。如果無法找到自己的 Position Zero，那麼即便是自己的人生也將無法主導，將從演員降格為觀眾。Wi(l)d-screen Baroque 正是這樣一種尋找自我的舞台。</p>
+<p>比如對於石動双葉來説，花柳香子是她終有一天要回到的地方。所以將摩托車拜託給香子保管。對於雙葉來説，這就是她的 Position Zero（所以摩托車的鑰匙也會是 Position Zero 的形狀）。</p>
+<p>而對於大場なな和星見純那，她們互相丟掉幻想，又重新承認對方，並最終分道揚鑣。這亦是屬於她們的 Position Zero。</p>
+<hr>
+<p>這裏比較特殊的一組是天堂真矢和西條クロディーヌ。天堂真矢在「皆殺しのレヴュー」時便已經意識到 Wi(l)d-screen Baroque 的真諦，暨從學園畢業後，學園中的理論將不再適用。社會中的任何時間任何地點都有可能成為舞台。若自己未能抓住機會完成演出，那麼作為舞台人的生命將迎來終結。</p>
+<p>但是，知道了這一點以後，天堂真矢採取了極端的舉措——完全封閉自己的感情，僅作為演員而活。</p>
+<p>這一點在舞台裝置的變化上也有所體現。在 TV 版（劇場版總集篇）中天堂真矢的舞台裝置「鳥バード2018」是一隻金色的小雞。而在新劇場版中則便成了一隻空心的鐵皮小雞。</p>
+<p><img src="https://misaka-mc.tokyo/images/Wide-Screen-Baroque/v2-d2c51c6486ffd1e4d618807649642f44_r.jpg" alt="舞台セット　鳥バード2018"></p>
+<p><img src="https://misaka-mc.tokyo/images/Wide-Screen-Baroque/v2-6595b0cc1b9cd4e81d3ed2a1a9442112_1440w.jpg" alt="鳥バード2018"></p>
+<p>具體的過程再這裏不再浪費篇幅，二人的最終結果實際上在 ED 的背景中有所透露——回到法國後クロディーヌ的窗邊，擺放着一直金黃色的小雞玩偶。</p>
+<hr>
+<p>再回來討論華恋經歷的故事。</p>
+<p>華恋實際上一直在列車上——沙漠中的列車上。而沙漠中列車的盡頭，是東京鐵塔。但就在東京鐵塔前不遠處，列車發生了事故，傾倒在沙漠中。列車總是向着下一站——但並不總能抵達下一站。</p>
+<p>在官網的簡介中有這樣一句話。</p>
+<blockquote>
+<p>在這場戲劇中首次感受到光芒的少女們，互相交換了命運<br>「要兩個人一起成為 Star」「在舞台等着你」</p>
+</blockquote>
+<p>這裏值得注意的是，二者「交換」了命運。</p>
+<p>華恋得到的是「在舞台等着你」的承諾。</p>
+<p>ひかり正在舞台等着自己。自己不得不繼續前進。</p>
+<p>但ひかり是否還記得這個約定？</p>
+<p>華恋害怕聽到否定的回答。</p>
+<p>而ひかり得到的則是「要兩個人一起成為 Star」</p>
+<p>因為要成為 Star，所以一定要踏向更高一層的舞台。</p>
+<p>但ひかり曾經在 Audition 中失敗過一次，甚至曾經考慮過放棄舞台。</p>
+<p>是華恋拯救了她。</p>
+<p>ひかり也意識到了華恋潛在的實力。如果掉以輕心，很容易成為華恋的 Fan，並止步與此。</p>
+<p>自己究竟是否能夠成為配的上華恋的演員？</p>
+<p>ひかり害怕聽到否定的回答。</p>
+<p>對於這二人來説，她們並不需要猶豫自己接下來需要做的事情。相反，她們對本以約定好的未來而感到恐懼。因為她們互相交換了命運，她們自身成為了另一方的目標。</p>
+<p>在 TV 版當中，作為二人約定的象徵，東京鐵塔是刺破「摘星之塔」的悲劇結局的武器。而在劇場版中，東京鐵塔則成為了「摘星之塔」本身，將二人的命運囚於其中。</p>
+<p>可以説，二人自做出約定以來，便不再過過自己的人生，而是以對方的命運為方向標，如列車一般前進，終將到達目的地。</p>
+<p>但這裏的矛盾也很明顯——如果她們沒有在過自己的人生，那麼對於她們來説，是觀眾，還是演員？</p>
+<hr>
+<h5 id="おまけ"><a href="#おまけ" class="headerlink" title="おまけ"></a>おまけ</h5><p>7 月 21 日發售的劇中樂 CD 中給出了 Wi(l)d-screen Baroque（皆殺しのレヴュー）的歌詞，也許有助於理解。</p>
+<blockquote>
+<p>あなた　分かります　か？<br>ルールが　分かります　か？<br>Wi(l)d-screen baroque<br>歌って踊って奪い合いましょう</p>
+<p>役（イノチ）終われば花と散れ<br>それから次は？次は？次は？<br>あなたはドコへ？</p>
+<p>キラめきがどうした　退屈だ　その程度か<br>口ほどにもないな<br>逃げの言い訳には　どれもこれもならない　ならない<br>降りても舞台だ<br>言葉だけじゃ足りないの　分かってる？<br>ねえ本気出そうよ</p>
+<p>la la la la la la la la<br>la la la la la la la la<br>Wi(l)d-screen baroque<br>自然の摂理なのね</p>
+<p>美しきマドモワゼル<br>そこに野生はあるのか<br>最後まで生き残るのは</p>
+<p>誰かが誰かの　血となり肉となれば　生を諦めて</p>
+<p>生きる　生きない　生きない<br>生きる　生きない　生きない</p>
+</blockquote>
+
+        
+                <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
+                    <p><strong>
+                         
+                            <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This page is available under the <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a> License.
+                        </strong>
+                        <br>
+                        <strong>Link to this article: </strong><a href="https://www.misaka-mc.tokyo/2021/07/17/Wide-Screen-Baroque/">https://www.misaka-mc.tokyo/2021/07/17/Wide-Screen-Baroque/</a>
+                    </p>
+                </blockquote>
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 DISQUS -->
+<div id="disqus-comment">
+    <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_config = function () {
+        this.page.url = 'https://www.misaka-mc.tokyo/2021/07/17/Wide-Screen-Baroque/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = 'https://www.misaka-mc.tokyo/2021/07/17/Wide-Screen-Baroque/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+</script>
+<script type="text/ls-javascript" id="disqus-thread-script">
+    queue.offer(function() {
+            (function() { // DON'T EDIT BELOW THIS LINE
+                var d = document;
+                var s = d.createElement('script');
+                s.src = '//misaka-mc.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', + new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        });
+</script>
+
+</div>
+<style>
+    #disqus-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2022/07/20/a-better-way-to-use-an-android-phone-2022/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Newer
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2021/03/10/Cooling-System-in-Your-Smartphone/" id="post_nav-older" class="next-content">
+            Older
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
+
+
+                    
+                        <!-- Overlay For Active Sidebar -->
+<div class="sidebar-overlay"></div>
+
+<!-- Material sidebar -->
+<aside id="sidebar" class="sidebar sidebar-colored sidebar-fixed-left" role="navigation">
+    <div id="sidebar-main">
+        <!-- Sidebar Header -->
+        <div class="sidebar-header header-cover" style="background-image: url(/img/bg.png);">
+    <!-- Top bar -->
+    <div class="top-bar"></div>
+
+    <!-- Sidebar toggle button -->
+    <button type="button" class="sidebar-toggle mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" style="display: initial;" data-upgraded=",MaterialButton,MaterialRipple">
+        <i class="material-icons">clear_all</i>
+        <span class="mdl-button__ripple-container">
+            <span class="mdl-ripple">
+            </span>
+        </span>
+    </button>
+
+    <!-- Sidebar Avatar -->
+    <div class="sidebar-image">
+        <img src="/img/avatar.jpg" alt="Mika Savijärvi's avatar">
+    </div>
+
+    <!-- Sidebar Email -->
+    <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
+        Mika Savijärvi
+        <b class="caret"></b>
+    </a>
+</div>
+
+
+        <!-- Sidebar Navigation  -->
+        <ul class="nav sidebar-nav">
+    <!-- User dropdown  -->
+    <li class="dropdown">
+        <ul id="settings-dropdown" class="dropdown-menu">
+            
+                <li>
+                    <a href="mailto: MikaSavijarvi@proton.me" target="_blank" title="Email Me">
+                        
+                            <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
+                        
+                        Email Me
+                    </a>
+                </li>
+            
+        </ul>
+    </li>
+
+    <!-- Homepage -->
+    
+        <li id="sidebar-first-li">
+            <a href="/">
+                
+                    <i class="material-icons sidebar-material-icons">home</i>
+                
+                Home
+            </a>
+        </li>
+        
+    
+
+    <!-- Archives  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">inbox</i>
+                
+                    Archives
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+            <li>
+                <a class="sidebar_archives-link" href="/archives/2022/11/">November 2022<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2022/07/">July 2022<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2021/07/">July 2021<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2021/03/">March 2021<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2021/02/">February 2021<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/12/">December 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/07/">July 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2020/05/">May 2020<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/10/">October 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/07/">July 2019<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/06/">June 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/05/">May 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/04/">April 2019<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/03/">March 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2019/01/">January 2019<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/12/">December 2018<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/08/">August 2016<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2016/07/">July 2016<span class="sidebar_archives-count">1</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Categories  -->
+    
+        <li class="dropdown">
+            <a href="#" class="ripple-effect dropdown-toggle" data-toggle="dropdown">
+                
+                    <i class="material-icons sidebar-material-icons">chrome_reader_mode</i>
+                
+                Categories
+                <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                <a class="sidebar_archives-link" href="/categories/Digital-Life/">Digital Life<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/categories/Gadget/">Gadget<span class="sidebar_archives-count">4</span></a></li><li><a class="sidebar_archives-link" href="/categories/Idea/">Idea<span class="sidebar_archives-count">10</span></a></li><li><a class="sidebar_archives-link" href="/categories/Tech/">Tech<span class="sidebar_archives-count">5</span></a>
+            </ul>
+        </li>
+        
+    
+
+    <!-- Pages  -->
+    
+        <li>
+            <a href="/about" title="About">
+                
+                    <i class="material-icons sidebar-material-icons">person</i>
+                
+                About
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/Virtual-Character" title="Virtual Character">
+                
+                    <i class="material-icons sidebar-material-icons">face</i>
+                
+                Virtual Character
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/timeline" title="Timeline">
+                
+                    <i class="material-icons sidebar-material-icons">history</i>
+                
+                Timeline
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/tags" title="Tags">
+                
+                    <i class="material-icons sidebar-material-icons">dashboard</i>
+                
+                Tags
+            </a>
+        </li>
+        
+    
+        <li>
+            <a href="/links" title="Also see">
+                
+                    <i class="material-icons sidebar-material-icons">language</i>
+                
+                Also see
+            </a>
+        </li>
+        
+            <li class="divider"></li>
+        
+    
+
+    <!-- Article Number  -->
+    
+        <li>
+            <a href="/archives">
+                Number of articles
+                <span class="sidebar-badge">24</span>
+            </a>
+        </li>
+        
+    
+</ul>
+
+
+        <!-- Sidebar Footer -->
+        <!--
+I'm glad you use this theme, the development is no so easy, I hope you can keep the copyright, I will thank you so much.
+If you still want to delete the copyrights, could you still retain the first one? Which namely "Theme Material"
+It will not impact the appearance and can give developers a lot of support :)
+
+很高兴您使用并喜欢该主题，开发不易 十分谢谢与希望您可以保留一下版权声明。
+如果您仍然想删除的话 能否只保留第一项呢？即 "Theme Material"
+它不会影响美观并可以给开发者很大的支持和动力。 :)
+-->
+
+<!-- Sidebar Divider -->
+
+
+<!-- Theme Material -->
+
+
+<!-- Help & Support -->
+<!--
+
+-->
+
+<!-- Feedback -->
+<!--
+
+-->
+
+<!-- About Theme -->
+<!--
+
+-->
+
+    </div>
+
+    <!-- Sidebar Image -->
+    
+
+</aside>
+
+                    
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
+
+                    <!--Footer-->
+<footer class="mdl-mini-footer" id="bottom">
+    
+        <!-- Paradox Footer Left Section -->
+        <div class="mdl-mini-footer--left-section sns-list">
+    <!-- Twitter -->
+    
+        <a href="https://twitter.com/MikaSavijarvi" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-twitter">
+                <span class="visuallyhidden">Twitter</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Facebook -->
+    
+
+    <!-- Google + -->
+    
+        <a href="https://www.youtube.com/channel/UCvfafvKLS6bHxWDJ24H6RcQ" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-gplus">
+                <span class="visuallyhidden">Google Plus</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- Weibo -->
+    
+
+    <!-- Instagram -->
+    
+
+    <!-- Tumblr -->
+    
+
+    <!-- Github -->
+    
+        <a href="https://github.com/mika-savijarvi" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-github">
+                <span class="visuallyhidden">Github</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- LinkedIn -->
+    
+
+    <!-- Zhihu -->
+    
+
+    <!-- Bilibili -->
+    
+
+    <!-- Telegram -->
+    
+        <a href="https://t.me/MSavijarvi" target="_blank">
+            <button class="mdl-mini-footer--social-btn social-btn footer-sns-telegram">
+                <span class="visuallyhidden">Telegram</span>
+            </button><!--
+     --></a>
+    
+
+    <!-- V2EX -->
+    
+
+    <!-- Segmentfault -->
+    
+</div>
+
+
+        <!--Copyright-->
+        <div id="copyright">
+            Copyright&nbsp;©&nbsp;<span year></span>&nbsp;Mika Savijärvi
+            
+        </div>
+
+        <!-- Paradox Footer Right Section -->
+
+        <!--
+        I am glad you use this theme, the development is no so easy, I hope you can keep the copyright.
+        It will not impact the appearance and can give developers a lot of support :)
+
+        很高兴您使用该主题，开发不易，希望您可以保留一下版权声明。
+        它不会影响美观并可以给开发者很大的支持。 :)
+        -->
+
+        <div class="mdl-mini-footer--right-section">
+            <div>
+                <div class="footer-develop-div">Powered by <a href="https://hexo.io" target="_blank" class="footer-develop-a">Hexo</a></div>
+                <div class="footer-develop-div">Theme - <a href="https://github.com/viosey/hexo-theme-material" target="_blank" class="footer-develop-a">Material</a></div>
+            </div>
+        </div>
+    
+</footer>
+
+
+                    <!-- Import JS File -->
+
+    <script>lsloader.load("lazyload_js","/js/lazyload.min.js?wgjW/HuQG9JDgvPDPoRAng==", true)</script>
+
+
+
+    <script>lsloader.load("js_js","/js/js.min.js?LT4t6iE6m8TO1BLGGiNJqA==", true)</script>
+
+
+
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
+
+
+<script type="text/ls-javascript" id="NProgress-script">
+    NProgress.configure({
+        showSpinner: true
+    });
+    NProgress.start();
+    $('#nprogress .bar').css({
+        'background': '#29d'
+    });
+    $('#nprogress .peg').css({
+        'box-shadow': '0 0 10px #29d, 0 0 15px #29d'
+    });
+    $('#nprogress .spinner-icon').css({
+        'border-top-color': '#29d',
+        'border-left-color': '#29d'
+    });
+    setTimeout(function() {
+        NProgress.done();
+        $('.fade').removeClass('out');
+    }, 800);
+</script>
+
+
+
+
+
+
+
+
+
+   <!-- 使用 DISQUS js 代码 -->
+<script id="dsq-count-scr" src="//misaka-mc.disqus.com/count.js" async></script>
+
+
+
+
+
+<!-- UC Browser Compatible -->
+<script>
+	var agent = navigator.userAgent.toLowerCase();
+	if(agent.indexOf('ucbrowser')>0) {
+		document.write('
+<link rel="stylesheet" href="/css/uc.css">
+');
+	   alert('由于 UC 浏览器使用极旧的内核，而本网站使用了一些新的特性。\n为了您能更好的浏览，推荐使用 Chrome 或 Firefox 浏览器。');
+	}
+</script>
+
+<!-- Import prettify js  -->
+
+
+    
+        <script>lsloader.load("hanabi","/js/hanabi-browser-bundle.js?5+2z7ZZmFuZK5IcimlZbxw==", true)</script>
+    
+
+
+<!-- Window Load -->
+<!-- add class for prettify -->
+<script type="text/ls-javascript" id="window-load">
+    $(window).on('load', function() {
+        // Post_Toc parent position fixed
+        $('.post-toc-wrap').parent('.mdl-menu__container').css('position', 'fixed');
+    });
+
+    
+    
+        
+        
+        HanabiBrowser.start('pre code',true);
+    
+</script>
+
+<!-- MathJax Load-->
+
+
+<!-- Bing Background -->
+
+
+<script type="text/ls-javascript" id="lazy-load">
+    // Offer LazyLoad
+    queue.offer(function(){
+        $('.lazy').lazyload({
+            effect : 'show'
+        });
+    });
+
+    // Start Queue
+    $(document).ready(function(){
+        setInterval(function(){
+            queue.execNext();
+        },200);
+    });
+</script>
+
+<!-- Custom Footer -->
+
+
+
+<script>
+    var copyrightNow = new Date().getFullYear();
+    var textContent = document.querySelector('span[year]')
+
+    copyrightSince = 2016;
+    if (copyrightSince === copyrightNow||copyrightSince === 0000) {
+        textContent.textContent = copyrightNow
+    } else {
+        textContent.textContent = copyrightSince + ' - ' + copyrightNow
+    }
+
+    (function(){
+        var scriptList = document.querySelectorAll('script[type="text/ls-javascript"]')
+
+        for (var i = 0; i < scriptList.length; ++i) {
+            var item = scriptList[i];
+            lsloader.runInlineScript(item.id,item.id);
+        }
+    })()
+console.log('\n %c © Material Theme | Version: 1.5.6 | https://github.com/viosey/hexo-theme-material %c \n', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-left-radius:5px;border-bottom-left-radius:5px;', 'color:#455a64;background:#e0e0e0;padding:5px 0;border-top-right-radius:5px;border-bottom-right-radius:5px;');
+</script>
+
+                </main>
+            </div>
+        </body>
+    
+</html>
